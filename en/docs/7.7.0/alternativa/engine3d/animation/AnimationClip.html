@@ -1,0 +1,611 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="/favicon.ico" rel="icon">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="AnimationClip,alternativa.engine3d.animation.AnimationClip,animated,length,loop,name,normalizedTime,notifiers,numTracks,objects,time,addNotify,addNotifyAtEnd,addTrack,attach,clone,getTrackAt,removeNotify,removeTrack,slice,updateLength" name="keywords">
+<title>alternativa.engine3d.animation.AnimationClip</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'AnimationClip - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?alternativa/engine3d/animation/AnimationClip.html&amp;alternativa/engine3d/animation/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;AnimationClip</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class AnimationClip"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">alternativa.engine3d.animation</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class AnimationClip</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">AnimationClip <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> <a href="AnimationNode.html">AnimationNode</a></td>
+</tr>
+</table>
+<p></p><!--translator-start:alternativa.engine3d.animation:AnimationClip-->Plays complex animation which is built from a set of animation tracks. For every distinct animated property of every model element there is a separate track needed. Track is somewhat similar to separate animated layer in Flash, but the layer stores full animation for some element. In opposite, track stores animation for every property (for an example, separate track for a scale and separate track for a coordinates).  Track also can contain keyframes in arbitraty positions. Frames, contained between keyframes, are linearly interpolated (i.e. behave themselves like a timeline frames in flash, for which there is twin created ). Animation clip connects each track with a specific object. Animation clip stores information about animation for the whole model, i.e. for any element state at any time moment. Animation works with the help of <code>AnimationController</code><!--translator-end:alternativa.engine3d.animation:AnimationClip--><p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="keys/Track.html" target="">alternativa.engine3d.animation.keys.Track</a>
+<br>
+<a href="keys/TransformTrack.html" target="">alternativa.engine3d.animation.keys.TransformTrack</a>
+<br>
+<a href="keys/NumberTrack.html" target="">alternativa.engine3d.animation.keys.NumberTrack</a>
+<br>
+<a href="../animation/AnimationController.html" target="">alternativa.engine3d.animation.AnimationController</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#animated">animated</a> : Boolean = true<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/animated-short-->If true, the animation will be played when active.<!--translator-end:alternativa.engine3d.animation:AnimationClip/animated-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AnimationNode.html#isActive">isActive</a> : Boolean<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationNode/isActive/get-short-->Determines if the animation is active.<!--translator-end:alternativa.engine3d.animation:AnimationNode/isActive/get-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="AnimationNode.html">AnimationNode</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#length">length</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/length-short-->Length of animation in seconds.<!--translator-end:alternativa.engine3d.animation:AnimationClip/length-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#loop">loop</a> : Boolean = true<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/loop-short-->Determines if animation should be restarted after end is reached.<!--translator-end:alternativa.engine3d.animation:AnimationClip/loop-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#name">name</a> : String<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/name-short-->The name of animation clip.<!--translator-end:alternativa.engine3d.animation:AnimationClip/name-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#normalizedTime">normalizedTime</a> : Number<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/normalizedTime/get-short-->Current normalized time in the interval [0, 1].<!--translator-end:alternativa.engine3d.animation:AnimationClip/normalizedTime/get-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#notifiers">notifiers</a> : Vector<div class="summaryTableDescription">[read-only] <!--translator-start:alternativa.engine3d.animation:AnimationClip/notifiers/get-short-->The list of notification triggers.<!--translator-end:alternativa.engine3d.animation:AnimationClip/notifiers/get-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#numTracks">numTracks</a> : int<div class="summaryTableDescription">[read-only] <!--translator-start:alternativa.engine3d.animation:AnimationClip/numTracks/get-short-->Total number of tracks.<!--translator-end:alternativa.engine3d.animation:AnimationClip/numTracks/get-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#objects">objects</a> : Array<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/objects/get-short-->The list of animated objects.<!--translator-end:alternativa.engine3d.animation:AnimationClip/objects/get-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AnimationNode.html#parent">parent</a> : <a href="../animation/AnimationNode.html">AnimationNode</a>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationNode/parent/get-short-->Parent animation blender.<!--translator-end:alternativa.engine3d.animation:AnimationNode/parent/get-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="AnimationNode.html">AnimationNode</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="AnimationNode.html#speed">speed</a> : Number = 1<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationNode/speed-short-->Animation speed.<!--translator-end:alternativa.engine3d.animation:AnimationNode/speed-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="AnimationNode.html">AnimationNode</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#time">time</a> : Number<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/time/get-short-->Current animation time in seconds.<!--translator-end:alternativa.engine3d.animation:AnimationClip/time/get-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#AnimationClip()">AnimationClip</a>(name:String = null)</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/AnimationClip-short-->Creates a new animation clip with given name.<!--translator-end:alternativa.engine3d.animation:AnimationClip/AnimationClip-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addNotify()">addNotify</a>(time:Number, name:String = null):<a href="../animation/AnimationNotify.html">AnimationNotify</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/addNotify-short-->Creates an AnimationNotify instance which is capable of firing notification events when playback reaches the specified time on the time line.<!--translator-end:alternativa.engine3d.animation:AnimationClip/addNotify-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addNotifyAtEnd()">addNotifyAtEnd</a>(offsetFromEnd:Number = 0, name:String = null):<a href="../animation/AnimationNotify.html">AnimationNotify</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/addNotifyAtEnd-short-->Creates an AnimationNotify instance which is capable of firing notification events when playback reaches the specified time on the time line.<!--translator-end:alternativa.engine3d.animation:AnimationClip/addNotifyAtEnd-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addTrack()">addTrack</a>(track:<a href="keys/Track.html">Track</a>):<a href="keys/Track.html">Track</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/addTrack-short-->Adds a new track to the animation clip.<!--translator-end:alternativa.engine3d.animation:AnimationClip/addTrack-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#attach()">attach</a>(object:Object, includeDescendants:Boolean):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/attach-short-->Binds tracks from the animation clip to given object.<!--translator-end:alternativa.engine3d.animation:AnimationClip/attach-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>():<a href="../animation/AnimationClip.html">AnimationClip</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/clone-short-->Clones the clip.<!--translator-end:alternativa.engine3d.animation:AnimationClip/clone-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getTrackAt()">getTrackAt</a>(index:int):<a href="keys/Track.html">Track</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/getTrackAt-short-->Returns a track with the specified index.<!--translator-end:alternativa.engine3d.animation:AnimationClip/getTrackAt-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeNotify()">removeNotify</a>(notify:<a href="AnimationNotify.html">AnimationNotify</a>):<a href="../animation/AnimationNotify.html">AnimationNotify</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/removeNotify-short-->Removes specified notification trigger.<!--translator-end:alternativa.engine3d.animation:AnimationClip/removeNotify-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeTrack()">removeTrack</a>(track:<a href="keys/Track.html">Track</a>):<a href="keys/Track.html">Track</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/removeTrack-short-->Removes the specified track from the clip.<!--translator-end:alternativa.engine3d.animation:AnimationClip/removeTrack-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#slice()">slice</a>(start:Number, end:Number):<a href="../animation/AnimationClip.html">AnimationClip</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/slice-short-->Returns a fragment of the clip between specified bounds.<!--translator-end:alternativa.engine3d.animation:AnimationClip/slice-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#updateLength()">updateLength</a>():void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationClip/updateLength-short-->Updates the length of the clip, i.<!--translator-end:alternativa.engine3d.animation:AnimationClip/updateLength-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationClip</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="animated"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">animated</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var animated:Boolean = true</code><p><!--translator-start:alternativa.engine3d.animation:AnimationClip/animated-->If true, the animation will be played when active.<!--translator-end:alternativa.engine3d.animation:AnimationClip/animated--></p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="AnimationNode.html#isActive" target="">AnimationNode.isActive</a>
+</div>
+</div>
+<a name="length"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">length</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var length:Number = 0</code><p><!--translator-start:alternativa.engine3d.animation:AnimationClip/length-->Length of animation in seconds. If length of any animation track is changed, updateLength() method should be called to recalculate the length of the clip.<!--translator-end:alternativa.engine3d.animation:AnimationClip/length--></p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../animation/AnimationClip.html#updateLength()" target="">updateLength()</a>
+</div>
+</div>
+<a name="loop"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">loop</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var loop:Boolean = true</code><p><!--translator-start:alternativa.engine3d.animation:AnimationClip/loop-->Determines if animation should be restarted after end is reached.<!--translator-end:alternativa.engine3d.animation:AnimationClip/loop--></p></div>
+<a name="name"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">name</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var name:String</code><p><!--translator-start:alternativa.engine3d.animation:AnimationClip/name-->The name of animation clip.<!--translator-end:alternativa.engine3d.animation:AnimationClip/name--></p></div>
+<a name="normalizedTime"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">normalizedTime</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>normalizedTime:Number</code>&nbsp;&nbsp;[read-write]<p><!--translator-start:alternativa.engine3d.animation:AnimationClip/normalizedTime/get-->Current normalized time in the interval [0, 1].<!--translator-end:alternativa.engine3d.animation:AnimationClip/normalizedTime/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get normalizedTime():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set normalizedTime(value:Number):void</code>
+<br>
+</div>
+<a name="notifiers"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">notifiers</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>notifiers:Vector</code>&nbsp;&nbsp;[read-only]<p><!--translator-start:alternativa.engine3d.animation:AnimationClip/notifiers/get-->The list of notification triggers.<!--translator-end:alternativa.engine3d.animation:AnimationClip/notifiers/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get notifiers():Vector</code>
+<br>
+</div>
+<a name="numTracks"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">numTracks</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>numTracks:int</code>&nbsp;&nbsp;[read-only]<p><!--translator-start:alternativa.engine3d.animation:AnimationClip/numTracks/get-->Total number of tracks.<!--translator-end:alternativa.engine3d.animation:AnimationClip/numTracks/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get numTracks():int</code>
+<br>
+</div>
+<a name="objects"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">objects</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>objects:Array</code>&nbsp;&nbsp;[read-write]<p><!--translator-start:alternativa.engine3d.animation:AnimationClip/objects/get-->The list of animated objects. Animation tracks are bound to the objects by object names.<!--translator-end:alternativa.engine3d.animation:AnimationClip/objects/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get objects():Array</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set objects(value:Array):void</code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">Track.object</div>
+</div>
+<a name="time"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">time</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>time:Number</code>&nbsp;&nbsp;[read-write]<p><!--translator-start:alternativa.engine3d.animation:AnimationClip/time/get-->Current animation time in seconds.<!--translator-end:alternativa.engine3d.animation:AnimationClip/time/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get time():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set time(value:Number):void</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="AnimationClip()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">AnimationClip</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function AnimationClip(name:String = null)</code><p><!--translator-start:alternativa.engine3d.animation:AnimationClip/AnimationClip-->Creates a new animation clip with given name.<!--translator-end:alternativa.engine3d.animation:AnimationClip/AnimationClip--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:String</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/AnimationClip/name-->the name of the clip<!--translator-end:alternativa.engine3d.animation:AnimationClip/AnimationClip/name--></td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addNotify()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addNotify</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addNotify(time:Number, name:String = null):<a href="../animation/AnimationNotify.html">AnimationNotify</a></code><p><!--translator-start:alternativa.engine3d.animation:AnimationClip/addNotify-->Creates an AnimationNotify instance which is capable of firing notification events when playback reaches the specified time on the time line.<!--translator-end:alternativa.engine3d.animation:AnimationClip/addNotify--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">time</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/addNotify/time-->The time in seconds to which the notification trigger will be bound.<!--translator-end:alternativa.engine3d.animation:AnimationClip/addNotify/time--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:String</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/addNotify/name-->The name of AnimationNotify instance.<!--translator-end:alternativa.engine3d.animation:AnimationClip/addNotify/name--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../animation/AnimationNotify.html">AnimationNotify</a></code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/addNotify-return-->A new instance of AnimationNotify class bound to specified time counting from start of the time line.<!--translator-end:alternativa.engine3d.animation:AnimationClip/addNotify-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="AnimationNotify.html" target="">AnimationNotify</a>
+</div>
+</div>
+<a name="addNotifyAtEnd()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addNotifyAtEnd</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addNotifyAtEnd(offsetFromEnd:Number = 0, name:String = null):<a href="../animation/AnimationNotify.html">AnimationNotify</a></code><p><!--translator-start:alternativa.engine3d.animation:AnimationClip/addNotifyAtEnd-->Creates an AnimationNotify instance which is capable of firing notification events when playback reaches the specified time on the time line. The time is specified as an offset from the end of time line towards its start.<!--translator-end:alternativa.engine3d.animation:AnimationClip/addNotifyAtEnd--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">offsetFromEnd</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/addNotifyAtEnd/offsetFromEnd-->The offset in seconds from the end of the time line towards its start, where the event object will be set in.<!--translator-end:alternativa.engine3d.animation:AnimationClip/addNotifyAtEnd/offsetFromEnd--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:String</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/addNotifyAtEnd/name-->The name of notification trigger.<!--translator-end:alternativa.engine3d.animation:AnimationClip/addNotifyAtEnd/name--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../animation/AnimationNotify.html">AnimationNotify</a></code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/addNotifyAtEnd-return-->A new instance of AnimationNotify class bound to specified time.<!--translator-end:alternativa.engine3d.animation:AnimationClip/addNotifyAtEnd-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="AnimationNotify.html" target="">AnimationNotify</a>
+</div>
+</div>
+<a name="addTrack()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addTrack</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addTrack(track:<a href="keys/Track.html">Track</a>):<a href="keys/Track.html">Track</a></code><p><!--translator-start:alternativa.engine3d.animation:AnimationClip/addTrack-->Adds a new track to the animation clip. The total length of the clip is recalculated automatically.<!--translator-end:alternativa.engine3d.animation:AnimationClip/addTrack--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">track</span>:<a href="keys/Track.html">Track</a></code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/addTrack/track-->The track to add.<!--translator-end:alternativa.engine3d.animation:AnimationClip/addTrack/track--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="keys/Track.html">Track</a></code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/addTrack-return-->The added track.<!--translator-end:alternativa.engine3d.animation:AnimationClip/addTrack-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../animation/AnimationClip.html#length" target="">length</a>
+</div>
+</div>
+<a name="attach()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">attach</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function attach(object:Object, includeDescendants:Boolean):void</code><p><!--translator-start:alternativa.engine3d.animation:AnimationClip/attach-->Binds tracks from the animation clip to given object. Only those tracks which have object property equal to the object's name are bound.<!--translator-end:alternativa.engine3d.animation:AnimationClip/attach--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">object</span>:Object</code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/attach/object-->The object to which tracks are bound.<!--translator-end:alternativa.engine3d.animation:AnimationClip/attach/object--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">includeDescendants</span>:Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/attach/includeDescendants-->If true, the whole tree of the object's children (if any) is processed.<!--translator-end:alternativa.engine3d.animation:AnimationClip/attach/includeDescendants--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../animation/AnimationClip.html#objects" target="">objects</a>
+<br>
+<a href="keys/Track.html#object" target="">alternativa.engine3d.animation.keys.Track.object</a>
+</div>
+</div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clone():<a href="../animation/AnimationClip.html">AnimationClip</a></code><p><!--translator-start:alternativa.engine3d.animation:AnimationClip/clone-->Clones the clip. Both the clone and the original reference the same tracks.<!--translator-end:alternativa.engine3d.animation:AnimationClip/clone--></p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../animation/AnimationClip.html">AnimationClip</a></code></td>
+</tr>
+</table>
+</div>
+<a name="getTrackAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getTrackAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getTrackAt(index:int):<a href="keys/Track.html">Track</a></code><p><!--translator-start:alternativa.engine3d.animation:AnimationClip/getTrackAt-->Returns a track with the specified index.<!--translator-end:alternativa.engine3d.animation:AnimationClip/getTrackAt--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">index</span>:int</code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/getTrackAt/index-->Track index.<!--translator-end:alternativa.engine3d.animation:AnimationClip/getTrackAt/index--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="keys/Track.html">Track</a></code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/getTrackAt-return-->A track with the specified index.<!--translator-end:alternativa.engine3d.animation:AnimationClip/getTrackAt-return--></td>
+</tr>
+</table>
+</div>
+<a name="removeNotify()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeNotify</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeNotify(notify:<a href="AnimationNotify.html">AnimationNotify</a>):<a href="../animation/AnimationNotify.html">AnimationNotify</a></code><p><!--translator-start:alternativa.engine3d.animation:AnimationClip/removeNotify-->Removes specified notification trigger.<!--translator-end:alternativa.engine3d.animation:AnimationClip/removeNotify--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">notify</span>:<a href="AnimationNotify.html">AnimationNotify</a></code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/removeNotify/notify-->The notification trigger to remove.<!--translator-end:alternativa.engine3d.animation:AnimationClip/removeNotify/notify--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../animation/AnimationNotify.html">AnimationNotify</a></code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/removeNotify-return-->The removed notification trigger.<!--translator-end:alternativa.engine3d.animation:AnimationClip/removeNotify-return--></td>
+</tr>
+</table>
+</div>
+<a name="removeTrack()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeTrack</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeTrack(track:<a href="keys/Track.html">Track</a>):<a href="keys/Track.html">Track</a></code><p><!--translator-start:alternativa.engine3d.animation:AnimationClip/removeTrack-->Removes the specified track from the clip. The clip length is automatically recalculated.<!--translator-end:alternativa.engine3d.animation:AnimationClip/removeTrack--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">track</span>:<a href="keys/Track.html">Track</a></code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/removeTrack/track-->The track to remove.<!--translator-end:alternativa.engine3d.animation:AnimationClip/removeTrack/track--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="keys/Track.html">Track</a></code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/removeTrack-return-->The removed track.<!--translator-end:alternativa.engine3d.animation:AnimationClip/removeTrack-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../animation/AnimationClip.html#length" target="">length</a>
+</div>
+</div>
+<a name="slice()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">slice</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function slice(start:Number, end:Number):<a href="../animation/AnimationClip.html">AnimationClip</a></code><p><!--translator-start:alternativa.engine3d.animation:AnimationClip/slice-->Returns a fragment of the clip between specified bounds.<!--translator-end:alternativa.engine3d.animation:AnimationClip/slice--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">start</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/slice/start-->The start time of a fragment in seconds.<!--translator-end:alternativa.engine3d.animation:AnimationClip/slice/start--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">end</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/slice/end-->The end time of a fragment in seconds.<!--translator-end:alternativa.engine3d.animation:AnimationClip/slice/end--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../animation/AnimationClip.html">AnimationClip</a></code> &mdash; <!--translator-start:alternativa.engine3d.animation:AnimationClip/slice-return-->The clip fragment.<!--translator-end:alternativa.engine3d.animation:AnimationClip/slice-return--></td>
+</tr>
+</table>
+</div>
+<a name="updateLength()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">updateLength</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function updateLength():void</code><p><!--translator-start:alternativa.engine3d.animation:AnimationClip/updateLength-->Updates the length of the clip, i.e. sets it to the longest track's length. You have to call this routine every time you change the track.<!--translator-end:alternativa.engine3d.animation:AnimationClip/updateLength--></p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

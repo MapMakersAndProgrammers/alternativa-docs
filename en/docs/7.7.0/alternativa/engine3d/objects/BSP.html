@@ -1,0 +1,647 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="/favicon.ico" rel="icon">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="BSP,alternativa.engine3d.objects.BSP,clipping,splitAnalysis,threshold,calculateResolution,clone,clonePropertiesFrom,createTree,destroyTree,intersectRay,setMaterialToAllFaces" name="keywords">
+<title>alternativa.engine3d.objects.BSP</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'BSP - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?alternativa/engine3d/objects/BSP.html&amp;alternativa/engine3d/objects/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;BSP</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class BSP"); titleBar_setSubNav(false,true,false,false,true,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">alternativa.engine3d.objects</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class BSP</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">BSP <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> <a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+</table>
+<p></p><!--translator-start:alternativa.engine3d.objects:BSP-->Polygonal object like <code>Mesh</code>, but have it's own sorting method by static BSP-tree. To use this object <code>createTree<code> should be called.<!--translator-end:alternativa.engine3d.objects:BSP--><p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Vertex.html" target="">alternativa.engine3d.core.Vertex</a>
+<br>
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#alpha">alpha</a> : Number = 1<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/alpha-short-->Alpha transparency value.<!--translator-end:alternativa.engine3d.core:Object3D/alpha-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#blendMode">blendMode</a> : String = "normal"<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/blendMode-short-->A value from the <code>flash.<!--translator-end:alternativa.engine3d.core:Object3D/blendMode-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#boundMaxX">boundMaxX</a> : Number = 1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMaxX-short-->Right bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMaxX-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#boundMaxY">boundMaxY</a> : Number = 1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMaxY-short-->Front bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMaxY-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#boundMaxZ">boundMaxZ</a> : Number = 1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMaxZ-short-->Top bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMaxZ-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#boundMinX">boundMinX</a> : Number = -1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMinX-short-->Left bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMinX-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#boundMinY">boundMinY</a> : Number = -1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMinY-short-->Back bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMinY-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#boundMinZ">boundMinZ</a> : Number = -1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMinZ-short-->Bottom bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMinZ-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#clipping">clipping</a> : int = 2<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:BSP/clipping-short-->Object clipping mode by camera frustum.<!--translator-end:alternativa.engine3d.objects:BSP/clipping-short--></div>
+</td><td class="summaryTableOwnerCol">BSP</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#colorTransform">colorTransform</a> : ColorTransform = null<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/colorTransform-short-->A ColorTransform object containing values that universally adjust the colors in the display object.<!--translator-end:alternativa.engine3d.core:Object3D/colorTransform-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#concatenatedMatrix">concatenatedMatrix</a> : Matrix3D<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/concatenatedMatrix/get-short-->A <code>Matrix3D</code> object which is the combined result of transformation matrices of object and all its parens.<!--translator-end:alternativa.engine3d.core:Object3D/concatenatedMatrix/get-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#doubleClickEnabled">doubleClickEnabled</a> : Boolean = false<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/doubleClickEnabled-short-->Specifies whether the object receives <code>doubleClick</code> events.<!--translator-end:alternativa.engine3d.core:Object3D/doubleClickEnabled-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#filters">filters</a> : Array = null<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/filters-short-->An indexed array that contains each filter object currently associated with the display object.<!--translator-end:alternativa.engine3d.core:Object3D/filters-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#matrix">matrix</a> : Matrix3D<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/matrix/get-short--><code>Matrix3D</code> object.<!--translator-end:alternativa.engine3d.core:Object3D/matrix/get-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#mouseEnabled">mouseEnabled</a> : Boolean = true<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/mouseEnabled-short-->Specifies whether this object receives mouse messages.<!--translator-end:alternativa.engine3d.core:Object3D/mouseEnabled-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#name">name</a> : String<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/name-short-->Object name.<!--translator-end:alternativa.engine3d.core:Object3D/name-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#parent">parent</a> : <a href="../core/Object3DContainer.html">Object3DContainer</a>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/parent/get-short-->Indicates the Object3DContainer object that contains this display object.<!--translator-end:alternativa.engine3d.core:Object3D/parent/get-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#rotationX">rotationX</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/rotationX-short-->Rotation angle by X axis (in radians).<!--translator-end:alternativa.engine3d.core:Object3D/rotationX-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#rotationY">rotationY</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/rotationY-short-->Rotation angle by Y axis (in radians).<!--translator-end:alternativa.engine3d.core:Object3D/rotationY-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#rotationZ">rotationZ</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/rotationZ-short-->Rotation angle by Z axis (in radians).<!--translator-end:alternativa.engine3d.core:Object3D/rotationZ-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#scaleX">scaleX</a> : Number = 1<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/scaleX-short-->Scale by X axis.<!--translator-end:alternativa.engine3d.core:Object3D/scaleX-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#scaleY">scaleY</a> : Number = 1<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/scaleY-short-->Scale by Y axis.<!--translator-end:alternativa.engine3d.core:Object3D/scaleY-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#scaleZ">scaleZ</a> : Number = 1<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/scaleZ-short-->Scale by Z axis.<!--translator-end:alternativa.engine3d.core:Object3D/scaleZ-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#splitAnalysis">splitAnalysis</a> : Boolean = true<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:BSP/splitAnalysis-short-->Split analysis option for BSP-tree building.<!--translator-end:alternativa.engine3d.objects:BSP/splitAnalysis-short--></div>
+</td><td class="summaryTableOwnerCol">BSP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#threshold">threshold</a> : Number = 0.01<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:BSP/threshold-short-->Geometrical threshold.<!--translator-end:alternativa.engine3d.objects:BSP/threshold-short--></div>
+</td><td class="summaryTableOwnerCol">BSP</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#useHandCursor">useHandCursor</a> : Boolean = false<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/useHandCursor-short-->Set this property to <code>true</code> to show "hand" mouse cursor while hovering the object, <code>false</code> otherwise.<!--translator-end:alternativa.engine3d.core:Object3D/useHandCursor-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#visible">visible</a> : Boolean = true<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/visible-short-->Whether or not the display object is visible.<!--translator-end:alternativa.engine3d.core:Object3D/visible-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#x">x</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/x-short-->X coordinate.<!--translator-end:alternativa.engine3d.core:Object3D/x-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#y">y</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/y-short-->Y coordinate.<!--translator-end:alternativa.engine3d.core:Object3D/y-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#z">z</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/z-short-->Z coordinate.<!--translator-end:alternativa.engine3d.core:Object3D/z-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedMethod" id="hideInheritedMethod">
+<a onclick="javascript:setInheritedVisible(false,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Methods</a>
+</div>
+<div class="showInheritedMethod" id="showInheritedMethod">
+<a onclick="javascript:setInheritedVisible(true,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Methods</a>
+</div>
+</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#addEventListener()">addEventListener</a>(type:String, listener:Function, useCapture:Boolean = false, priority:int = 0, useWeakReference:Boolean = false):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/addEventListener-short-->Registers an event listener object with an EventDispatcher object so that the listener receives notification of an event.<!--translator-end:alternativa.engine3d.core:Object3D/addEventListener-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#calculateBounds()">calculateBounds</a>():void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/calculateBounds-short-->Calculates object bounds in its space.<!--translator-end:alternativa.engine3d.core:Object3D/calculateBounds-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#calculateResolution()">calculateResolution</a>(textureWidth:int, textureHeight:int, type:int = 1, matrix:Matrix3D = null):Number</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:BSP/calculateResolution-short-->Calculates how many units of 3D space correspond to one pixel of texture.<!--translator-end:alternativa.engine3d.objects:BSP/calculateResolution-short--></div>
+</td><td class="summaryTableOwnerCol">BSP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>():<a href="../core/Object3D.html">Object3D</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:BSP/clone-short-->Returns an object that is an exact copy of the original object.<!--translator-end:alternativa.engine3d.objects:BSP/clone-short--></div>
+</td><td class="summaryTableOwnerCol">BSP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#createTree()">createTree</a>(sourceGeometry:<a href="Mesh.html">Mesh</a>, clearSource:Boolean = false):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:BSP/createTree-short-->Creates BSP-tree from the supplied geometry.<!--translator-end:alternativa.engine3d.objects:BSP/createTree-short--></div>
+</td><td class="summaryTableOwnerCol">BSP</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#destroyTree()">destroyTree</a>():void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:BSP/destroyTree-short-->Destroys the tree.<!--translator-end:alternativa.engine3d.objects:BSP/destroyTree-short--></div>
+</td><td class="summaryTableOwnerCol">BSP</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#dispatchEvent()">dispatchEvent</a>(event:Event):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/dispatchEvent-short-->Dispatches an event into the event flow.<!--translator-end:alternativa.engine3d.core:Object3D/dispatchEvent-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#globalToLocal()">globalToLocal</a>(point:Vector3D):Vector3D</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/globalToLocal-short-->Transforms a point from global space to local spce of the object.<!--translator-end:alternativa.engine3d.core:Object3D/globalToLocal-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#hasEventListener()">hasEventListener</a>(type:String):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/hasEventListener-short-->Checks whether the EventDispatcher object has any listeners registered for a specific type of event.<!--translator-end:alternativa.engine3d.core:Object3D/hasEventListener-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#intersectRay()">intersectRay</a>(origin:Vector3D, direction:Vector3D, excludedObjects:Dictionary = null, camera:<a href="../core/Camera3D.html">Camera3D</a> = null):<a href="../core/RayIntersectionData.html">RayIntersectionData</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:BSP/intersectRay-short-->Searches for the ray intersection.<!--translator-end:alternativa.engine3d.objects:BSP/intersectRay-short--></div>
+</td><td class="summaryTableOwnerCol">BSP</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#localToGlobal()">localToGlobal</a>(point:Vector3D):Vector3D</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/localToGlobal-short-->Transforms a point from local space of object to global spce.<!--translator-end:alternativa.engine3d.core:Object3D/localToGlobal-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#removeEventListener()">removeEventListener</a>(type:String, listener:Function, useCapture:Boolean = false):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/removeEventListener-short-->Removes a listener from the EventDispatcher object.<!--translator-end:alternativa.engine3d.core:Object3D/removeEventListener-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setMaterialToAllFaces()">setMaterialToAllFaces</a>(material:<a href="../materials/Material.html">Material</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:BSP/setMaterialToAllFaces-short-->Sets material for all faces.<!--translator-end:alternativa.engine3d.objects:BSP/setMaterialToAllFaces-short--></div>
+</td><td class="summaryTableOwnerCol">BSP</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#toString()">toString</a>():String</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/toString-short-->Returns the string presentation of the specified object.<!--translator-end:alternativa.engine3d.core:Object3D/toString-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#willTrigger()">willTrigger</a>(type:String):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/willTrigger-short-->Checks whether an event listener is registered with this EventDispatcher object or any of its ancestors for the specified event type.<!--translator-end:alternativa.engine3d.core:Object3D/willTrigger-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+</table>
+</div>
+<a name="protectedMethodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Methods</div>
+<table id="summaryTableProtectedMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clonePropertiesFrom()">clonePropertiesFrom</a>(source:<a href="../core/Object3D.html">Object3D</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:BSP/protected:clonePropertiesFrom-short-->Copies the base properties.<!--translator-end:alternativa.engine3d.objects:BSP/protected:clonePropertiesFrom-short--></div>
+</td><td class="summaryTableOwnerCol">BSP</td>
+</tr>
+</table>
+</div>
+<a name="eventSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Events</div>
+<div class="showHideLinks">
+<div class="hideInheritedEvent" id="hideInheritedEvent">
+<a onclick="javascript:setInheritedVisible(false,'Event');" href="#eventSummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Events</a>
+</div>
+<div class="showInheritedEvent" id="showInheritedEvent">
+<a onclick="javascript:setInheritedVisible(true,'Event');" href="#eventSummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Events</a>
+</div>
+</div>
+<table id="summaryTableEvent" class="summaryTable hideInheritedEvent" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Event</th><th>Summary</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:click">click</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.click-->Dispatched when a user presses and releases the main button of the user's pointing device over the same object.<!--translator-end:alternativa.engine3d.core:Object3D/event.click--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:doubleClick">doubleClick</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.doubleClick-->Dispatched when a user presses and releases the main button of a pointing device twice in rapid succession over the same object when that object's doubleClickEnabled flag is set to true.<!--translator-end:alternativa.engine3d.core:Object3D/event.doubleClick--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:mouseDown">mouseDown</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseDown-->Dispatched when a user presses the pointing device button over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseDown--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:mouseMove">mouseMove</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseMove-->Dispatched when a user moves the pointing device while it is over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseMove--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:mouseOut">mouseOut</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseOut-->Dispatched when the user moves a pointing device away from an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseOut--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:mouseOver">mouseOver</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseOver-->Dispatched when the user moves a pointing device over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseOver--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:mouseUp">mouseUp</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseUp-->Dispatched when a user releases the pointing device button over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseUp--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:mouseWheel">mouseWheel</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseWheel-->Dispatched when a mouse wheel is spun over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseWheel--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:rollOut">rollOut</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.rollOut-->Dispatched when the user moves a pointing device away from an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.rollOut--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:rollOver">rollOver</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.rollOver-->Dispatched when the user moves a pointing device over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.rollOver--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="clipping"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clipping</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var clipping:int = 2</code><p><!--translator-start:alternativa.engine3d.objects:BSP/clipping-->Object clipping mode by camera frustum. You can use following constants of <code>Clipping</code> class: <code>Clipping.BOUND_CULLING</code>, <code>Clipping.FACE_CULLING</code>, <code>Clipping.FACE_CLIPPING</code>.  Default value is <code>Clipping.FACE_CLIPPING</code>.<!--translator-end:alternativa.engine3d.objects:BSP/clipping--></p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Clipping.html" target="">alternativa.engine3d.core.Clipping</a>
+</div>
+</div>
+<a name="splitAnalysis"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">splitAnalysis</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var splitAnalysis:Boolean = true</code><p><!--translator-start:alternativa.engine3d.objects:BSP/splitAnalysis-->Split analysis option for BSP-tree building. Default value is <code>true</code>.<!--translator-end:alternativa.engine3d.objects:BSP/splitAnalysis--></p></div>
+<a name="threshold"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">threshold</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var threshold:Number = 0.01</code><p><!--translator-start:alternativa.engine3d.objects:BSP/threshold-->Geometrical threshold. It is small quantity where it is possible not to take into account values difference. It is used for BSP-tree building. Default value is <code>0.01</code>.   <!--translator-end:alternativa.engine3d.objects:BSP/threshold--></p></div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="calculateResolution()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">calculateResolution</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function calculateResolution(textureWidth:int, textureHeight:int, type:int = 1, matrix:Matrix3D = null):Number</code><p><!--translator-start:alternativa.engine3d.objects:BSP/calculateResolution-->Calculates how many units of 3D space correspond to one pixel of texture. It is useful for mipmapping. If textureMaterial's  if <code>mipMapping</code> value equal to <code>MipMapping.OBJECT_DISTANCE</code> or <code>MipMapping.PER_PIXEL</code>, it is useful to set result of this method in resolution property of material.<!--translator-end:alternativa.engine3d.objects:BSP/calculateResolution--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">textureWidth</span>:int</code> &mdash; <!--translator-start:alternativa.engine3d.objects:BSP/calculateResolution/textureWidth-->Texture width.<!--translator-end:alternativa.engine3d.objects:BSP/calculateResolution/textureWidth--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">textureHeight</span>:int</code> &mdash; <!--translator-start:alternativa.engine3d.objects:BSP/calculateResolution/textureHeight-->Texture height.<!--translator-end:alternativa.engine3d.objects:BSP/calculateResolution/textureHeight--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:int</code> (default = <code>1</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:BSP/calculateResolution/type-->Calculation method: 0 - by first edge, 1 - average value, 2 - max value, 3 - min value.<!--translator-end:alternativa.engine3d.objects:BSP/calculateResolution/type--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">matrix</span>:Matrix3D</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:BSP/calculateResolution/matrix-->Transformation matrix.<!--translator-end:alternativa.engine3d.objects:BSP/calculateResolution/matrix--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; <!--translator-start:alternativa.engine3d.objects:BSP/calculateResolution-return-->Resolution.  <!--translator-end:alternativa.engine3d.objects:BSP/calculateResolution-return--></td>
+</tr>
+</table>
+</div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function clone():<a href="../core/Object3D.html">Object3D</a></code><p><!--translator-start:alternativa.engine3d.objects:BSP/clone-->Returns an object that is an exact copy of the original object.<!--translator-end:alternativa.engine3d.objects:BSP/clone--></p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/Object3D.html">Object3D</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:BSP/clone-return-->Original object clone.<!--translator-end:alternativa.engine3d.objects:BSP/clone-return--></td>
+</tr>
+</table>
+</div>
+<a name="clonePropertiesFrom()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clonePropertiesFrom</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected override function clonePropertiesFrom(source:<a href="../core/Object3D.html">Object3D</a>):void</code><p><!--translator-start:alternativa.engine3d.objects:BSP/protected:clonePropertiesFrom-->Copies the base properties.<!--translator-end:alternativa.engine3d.objects:BSP/protected:clonePropertiesFrom--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">source</span>:<a href="../core/Object3D.html">Object3D</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:BSP/protected:clonePropertiesFrom/source-->Source object.<!--translator-end:alternativa.engine3d.objects:BSP/protected:clonePropertiesFrom/source--></td>
+</tr>
+</table>
+</div>
+<a name="createTree()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">createTree</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function createTree(sourceGeometry:<a href="Mesh.html">Mesh</a>, clearSource:Boolean = false):void</code><p><!--translator-start:alternativa.engine3d.objects:BSP/createTree-->Creates BSP-tree from the supplied geometry.<!--translator-end:alternativa.engine3d.objects:BSP/createTree--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sourceGeometry</span>:<a href="Mesh.html">Mesh</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:BSP/createTree/sourceGeometry--><code>Mesh</code>, на основе граней которого строится дерево. Нормали вершин переданного <code>Mesh</code> сохраняются в вершинах <code>BSP</code>.<!--translator-end:alternativa.engine3d.objects:BSP/createTree/sourceGeometry--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">clearSource</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:BSP/createTree/clearSource-->If <code>true</code>, vertices and faces are moved from source to the tree, otherwise they are cloned.<!--translator-end:alternativa.engine3d.objects:BSP/createTree/clearSource--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../objects/Mesh.html" target="">alternativa.engine3d.objects.Mesh</a>
+<br>
+<a href="../core/Vertex.html" target="">alternativa.engine3d.core.Vertex</a>
+<br>
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+<br>
+<a href="../objects/BSP.html#destroyTree()" target="">destroyTree()</a>
+</div>
+</div>
+<a name="destroyTree()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">destroyTree</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function destroyTree():void</code><p><!--translator-start:alternativa.engine3d.objects:BSP/destroyTree-->Destroys the tree.<!--translator-end:alternativa.engine3d.objects:BSP/destroyTree--></p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../objects/BSP.html#createTree()" target="">createTree()</a>
+</div>
+</div>
+<a name="intersectRay()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">intersectRay</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function intersectRay(origin:Vector3D, direction:Vector3D, excludedObjects:Dictionary = null, camera:<a href="../core/Camera3D.html">Camera3D</a> = null):<a href="../core/RayIntersectionData.html">RayIntersectionData</a></code><p><!--translator-start:alternativa.engine3d.objects:BSP/intersectRay-->Searches for the ray intersection.<!--translator-end:alternativa.engine3d.objects:BSP/intersectRay--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">origin</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.objects:BSP/intersectRay/origin-->Ray origin.<!--translator-end:alternativa.engine3d.objects:BSP/intersectRay/origin--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">direction</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.objects:BSP/intersectRay/direction-->Ray direction.<!--translator-end:alternativa.engine3d.objects:BSP/intersectRay/direction--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">excludedObjects</span>:Dictionary</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:BSP/intersectRay/excludedObjects-->The objects that are keys of this dictionary will be excluded from intersection test.<!--translator-end:alternativa.engine3d.objects:BSP/intersectRay/excludedObjects--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">camera</span>:<a href="../core/Camera3D.html">Camera3D</a></code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:BSP/intersectRay/camera-->The camera for <code>Sprite3D</code> objects intersection test.<!--translator-end:alternativa.engine3d.objects:BSP/intersectRay/camera--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/RayIntersectionData.html">RayIntersectionData</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:BSP/intersectRay-return-->Intersection test result -  <code>RayIntersectionData</code> object. If there is no intersection the value of null will be returned.<!--translator-end:alternativa.engine3d.objects:BSP/intersectRay-return--></td>
+</tr>
+</table>
+</div>
+<a name="setMaterialToAllFaces()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setMaterialToAllFaces</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setMaterialToAllFaces(material:<a href="../materials/Material.html">Material</a>):void</code><p><!--translator-start:alternativa.engine3d.objects:BSP/setMaterialToAllFaces-->Sets material for all faces. <!--translator-end:alternativa.engine3d.objects:BSP/setMaterialToAllFaces--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">material</span>:<a href="../materials/Material.html">Material</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:BSP/setMaterialToAllFaces/material-->Material.<!--translator-end:alternativa.engine3d.objects:BSP/setMaterialToAllFaces/material--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../materials/Material.html" target="">alternativa.engine3d.materials.Material</a>
+<br>
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+</div>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

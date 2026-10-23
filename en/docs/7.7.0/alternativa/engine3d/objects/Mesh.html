@@ -1,0 +1,1509 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="/favicon.ico" rel="icon">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="Mesh,alternativa.engine3d.objects.Mesh,clipping,sorting,threshold,faces,vertices,addFace,addFaceByIds,addQuadFace,addTriFace,addVertex,addVerticesAndFaces,calculateFacesNormals,calculateResolution,calculateVerticesNormals,clone,clonePropertiesFrom,containsFace,containsFaceWithId,containsVertex,containsVertexWithId,getFaceById,getVertexById,intersectRay,optimizeForDynamicBSP,removeFace,removeFaceById,removeVertex,removeVertexById,setMaterialToAllFaces,weldFaces,weldVertices" name="keywords">
+<title>alternativa.engine3d.objects.Mesh</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Mesh - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?alternativa/engine3d/objects/Mesh.html&amp;alternativa/engine3d/objects/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Mesh</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Mesh"); titleBar_setSubNav(false,true,false,false,true,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">alternativa.engine3d.objects</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Mesh</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Mesh <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> <a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Subclasses</td><td><a href="../primitives/Box.html">Box</a>, <a href="../primitives/GeoSphere.html">GeoSphere</a>, <a href="../primitives/Plane.html">Plane</a>, <a href="../objects/Skin.html">Skin</a>, <a href="../objects/SkyBox.html">SkyBox</a>, <a href="../primitives/Sphere.html">Sphere</a></td>
+</tr>
+</table>
+<p></p><!--translator-start:alternativa.engine3d.objects:Mesh-->Poligonal object which consists of vertices and faces built throgh these vertices. <!--translator-end:alternativa.engine3d.objects:Mesh--><p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Vertex.html" target="">alternativa.engine3d.core.Vertex</a>
+<br>
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#alpha">alpha</a> : Number = 1<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/alpha-short-->Alpha transparency value.<!--translator-end:alternativa.engine3d.core:Object3D/alpha-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#blendMode">blendMode</a> : String = "normal"<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/blendMode-short-->A value from the <code>flash.<!--translator-end:alternativa.engine3d.core:Object3D/blendMode-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#boundMaxX">boundMaxX</a> : Number = 1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMaxX-short-->Right bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMaxX-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#boundMaxY">boundMaxY</a> : Number = 1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMaxY-short-->Front bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMaxY-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#boundMaxZ">boundMaxZ</a> : Number = 1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMaxZ-short-->Top bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMaxZ-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#boundMinX">boundMinX</a> : Number = -1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMinX-short-->Left bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMinX-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#boundMinY">boundMinY</a> : Number = -1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMinY-short-->Back bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMinY-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#boundMinZ">boundMinZ</a> : Number = -1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMinZ-short-->Bottom bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMinZ-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#clipping">clipping</a> : int = 2<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/clipping-short-->Object clipping mode by camera frustum.<!--translator-end:alternativa.engine3d.objects:Mesh/clipping-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#colorTransform">colorTransform</a> : ColorTransform = null<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/colorTransform-short-->A ColorTransform object containing values that universally adjust the colors in the display object.<!--translator-end:alternativa.engine3d.core:Object3D/colorTransform-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#concatenatedMatrix">concatenatedMatrix</a> : Matrix3D<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/concatenatedMatrix/get-short-->A <code>Matrix3D</code> object which is the combined result of transformation matrices of object and all its parens.<!--translator-end:alternativa.engine3d.core:Object3D/concatenatedMatrix/get-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#doubleClickEnabled">doubleClickEnabled</a> : Boolean = false<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/doubleClickEnabled-short-->Specifies whether the object receives <code>doubleClick</code> events.<!--translator-end:alternativa.engine3d.core:Object3D/doubleClickEnabled-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#faces">faces</a> : Vector<div class="summaryTableDescription">[read-only] <!--translator-start:alternativa.engine3d.objects:Mesh/faces/get-short-->List of face instances.<!--translator-end:alternativa.engine3d.objects:Mesh/faces/get-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#filters">filters</a> : Array = null<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/filters-short-->An indexed array that contains each filter object currently associated with the display object.<!--translator-end:alternativa.engine3d.core:Object3D/filters-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#matrix">matrix</a> : Matrix3D<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/matrix/get-short--><code>Matrix3D</code> object.<!--translator-end:alternativa.engine3d.core:Object3D/matrix/get-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#mouseEnabled">mouseEnabled</a> : Boolean = true<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/mouseEnabled-short-->Specifies whether this object receives mouse messages.<!--translator-end:alternativa.engine3d.core:Object3D/mouseEnabled-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#name">name</a> : String<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/name-short-->Object name.<!--translator-end:alternativa.engine3d.core:Object3D/name-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#parent">parent</a> : <a href="../core/Object3DContainer.html">Object3DContainer</a>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/parent/get-short-->Indicates the Object3DContainer object that contains this display object.<!--translator-end:alternativa.engine3d.core:Object3D/parent/get-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#rotationX">rotationX</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/rotationX-short-->Rotation angle by X axis (in radians).<!--translator-end:alternativa.engine3d.core:Object3D/rotationX-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#rotationY">rotationY</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/rotationY-short-->Rotation angle by Y axis (in radians).<!--translator-end:alternativa.engine3d.core:Object3D/rotationY-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#rotationZ">rotationZ</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/rotationZ-short-->Rotation angle by Z axis (in radians).<!--translator-end:alternativa.engine3d.core:Object3D/rotationZ-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#scaleX">scaleX</a> : Number = 1<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/scaleX-short-->Scale by X axis.<!--translator-end:alternativa.engine3d.core:Object3D/scaleX-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#scaleY">scaleY</a> : Number = 1<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/scaleY-short-->Scale by Y axis.<!--translator-end:alternativa.engine3d.core:Object3D/scaleY-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#scaleZ">scaleZ</a> : Number = 1<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/scaleZ-short-->Scale by Z axis.<!--translator-end:alternativa.engine3d.core:Object3D/scaleZ-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#sorting">sorting</a> : int = 1<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/sorting-short-->Faces sorting mode.<!--translator-end:alternativa.engine3d.objects:Mesh/sorting-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#threshold">threshold</a> : Number = 0.01<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/threshold-short-->Geometrical threshold.<!--translator-end:alternativa.engine3d.objects:Mesh/threshold-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#useHandCursor">useHandCursor</a> : Boolean = false<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/useHandCursor-short-->Set this property to <code>true</code> to show "hand" mouse cursor while hovering the object, <code>false</code> otherwise.<!--translator-end:alternativa.engine3d.core:Object3D/useHandCursor-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#vertices">vertices</a> : Vector<div class="summaryTableDescription">[read-only] <!--translator-start:alternativa.engine3d.objects:Mesh/vertices/get-short-->List of vertices instances.<!--translator-end:alternativa.engine3d.objects:Mesh/vertices/get-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#visible">visible</a> : Boolean = true<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/visible-short-->Whether or not the display object is visible.<!--translator-end:alternativa.engine3d.core:Object3D/visible-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#x">x</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/x-short-->X coordinate.<!--translator-end:alternativa.engine3d.core:Object3D/x-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#y">y</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/y-short-->Y coordinate.<!--translator-end:alternativa.engine3d.core:Object3D/y-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/Object3D.html#z">z</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/z-short-->Z coordinate.<!--translator-end:alternativa.engine3d.core:Object3D/z-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedMethod" id="hideInheritedMethod">
+<a onclick="javascript:setInheritedVisible(false,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Methods</a>
+</div>
+<div class="showInheritedMethod" id="showInheritedMethod">
+<a onclick="javascript:setInheritedVisible(true,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Methods</a>
+</div>
+</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#addEventListener()">addEventListener</a>(type:String, listener:Function, useCapture:Boolean = false, priority:int = 0, useWeakReference:Boolean = false):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/addEventListener-short-->Registers an event listener object with an EventDispatcher object so that the listener receives notification of an event.<!--translator-end:alternativa.engine3d.core:Object3D/addEventListener-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addFace()">addFace</a>(vertices:Vector, material:<a href="../materials/Material.html">Material</a> = null, id:Object = null):<a href="../core/Face.html">Face</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/addFace-short-->Creates and adds new face.<!--translator-end:alternativa.engine3d.objects:Mesh/addFace-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addFaceByIds()">addFaceByIds</a>(vertexIds:Array, material:<a href="../materials/Material.html">Material</a> = null, id:Object = null):<a href="../core/Face.html">Face</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/addFaceByIds-short-->Creates and adss face by vertices identifiers.<!--translator-end:alternativa.engine3d.objects:Mesh/addFaceByIds-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addQuadFace()">addQuadFace</a>(a:<a href="../core/Vertex.html">Vertex</a>, b:<a href="../core/Vertex.html">Vertex</a>, c:<a href="../core/Vertex.html">Vertex</a>, d:<a href="../core/Vertex.html">Vertex</a>, material:<a href="../materials/Material.html">Material</a> = null, id:Object = null):<a href="../core/Face.html">Face</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/addQuadFace-short-->Creates and adds new quad face.<!--translator-end:alternativa.engine3d.objects:Mesh/addQuadFace-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addTriFace()">addTriFace</a>(a:<a href="../core/Vertex.html">Vertex</a>, b:<a href="../core/Vertex.html">Vertex</a>, c:<a href="../core/Vertex.html">Vertex</a>, material:<a href="../materials/Material.html">Material</a> = null, id:Object = null):<a href="../core/Face.html">Face</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/addTriFace-short-->Creates and adds new triangle face.<!--translator-end:alternativa.engine3d.objects:Mesh/addTriFace-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addVertex()">addVertex</a>(x:Number, y:Number, z:Number, u:Number = 0, v:Number = 0, id:Object = null):<a href="../core/Vertex.html">Vertex</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/addVertex-short-->Creates and adds new vertex.<!--translator-end:alternativa.engine3d.objects:Mesh/addVertex-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addVerticesAndFaces()">addVerticesAndFaces</a>(vertices:Vector, uvs:Vector, indices:Vector, poly:Boolean = false, material:<a href="../materials/Material.html">Material</a> = null):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/addVerticesAndFaces-short-->Creates and adds vertices and faces created of values supplied vectors.<!--translator-end:alternativa.engine3d.objects:Mesh/addVerticesAndFaces-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#calculateBounds()">calculateBounds</a>():void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/calculateBounds-short-->Calculates object bounds in its space.<!--translator-end:alternativa.engine3d.core:Object3D/calculateBounds-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#calculateFacesNormals()">calculateFacesNormals</a>(normalize:Boolean = true):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/calculateFacesNormals-short-->Computates faces normals.<!--translator-end:alternativa.engine3d.objects:Mesh/calculateFacesNormals-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#calculateResolution()">calculateResolution</a>(textureWidth:int, textureHeight:int, type:int = 1, matrix:Matrix3D = null):Number</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/calculateResolution-short-->Calculates how many units of 3D space correspond to one pixel of texture.<!--translator-end:alternativa.engine3d.objects:Mesh/calculateResolution-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#calculateVerticesNormals()">calculateVerticesNormals</a>(weldSeams:Boolean = false, distanceThreshold:Number = 0):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/calculateVerticesNormals-short-->Computates vertices normals.<!--translator-end:alternativa.engine3d.objects:Mesh/calculateVerticesNormals-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>():<a href="../core/Object3D.html">Object3D</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/clone-short-->Returns an object that is an exact copy of the original object.<!--translator-end:alternativa.engine3d.objects:Mesh/clone-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#containsFace()">containsFace</a>(face:<a href="../core/Face.html">Face</a>):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/containsFace-short-->Checks if there is a face in the object.<!--translator-end:alternativa.engine3d.objects:Mesh/containsFace-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#containsFaceWithId()">containsFaceWithId</a>(id:Object):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/containsFaceWithId-short-->Checks if there is a face in the object with indentifier.<!--translator-end:alternativa.engine3d.objects:Mesh/containsFaceWithId-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#containsVertex()">containsVertex</a>(vertex:<a href="../core/Vertex.html">Vertex</a>):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/containsVertex-short-->Checks if there is a vertex in the object.<!--translator-end:alternativa.engine3d.objects:Mesh/containsVertex-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#containsVertexWithId()">containsVertexWithId</a>(id:Object):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/containsVertexWithId-short-->Checks if there is a vertex in the object with indentifier.<!--translator-end:alternativa.engine3d.objects:Mesh/containsVertexWithId-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#dispatchEvent()">dispatchEvent</a>(event:Event):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/dispatchEvent-short-->Dispatches an event into the event flow.<!--translator-end:alternativa.engine3d.core:Object3D/dispatchEvent-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getFaceById()">getFaceById</a>(id:Object):<a href="../core/Face.html">Face</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/getFaceById-short-->Returns face by identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/getFaceById-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getVertexById()">getVertexById</a>(id:Object):<a href="../core/Vertex.html">Vertex</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/getVertexById-short-->Returns vertex by identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/getVertexById-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#globalToLocal()">globalToLocal</a>(point:Vector3D):Vector3D</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/globalToLocal-short-->Transforms a point from global space to local spce of the object.<!--translator-end:alternativa.engine3d.core:Object3D/globalToLocal-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#hasEventListener()">hasEventListener</a>(type:String):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/hasEventListener-short-->Checks whether the EventDispatcher object has any listeners registered for a specific type of event.<!--translator-end:alternativa.engine3d.core:Object3D/hasEventListener-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#intersectRay()">intersectRay</a>(origin:Vector3D, direction:Vector3D, excludedObjects:Dictionary = null, camera:<a href="../core/Camera3D.html">Camera3D</a> = null):<a href="../core/RayIntersectionData.html">RayIntersectionData</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/intersectRay-short-->Searches for the ray intersection.<!--translator-end:alternativa.engine3d.objects:Mesh/intersectRay-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#localToGlobal()">localToGlobal</a>(point:Vector3D):Vector3D</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/localToGlobal-short-->Transforms a point from local space of object to global spce.<!--translator-end:alternativa.engine3d.core:Object3D/localToGlobal-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#optimizeForDynamicBSP()">optimizeForDynamicBSP</a>(iterations:int = 1):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/optimizeForDynamicBSP-short-->Puts faces in specified sequence to minimize amount of splits in <code>Sorting.<!--translator-end:alternativa.engine3d.objects:Mesh/optimizeForDynamicBSP-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#removeEventListener()">removeEventListener</a>(type:String, listener:Function, useCapture:Boolean = false):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/removeEventListener-short-->Removes a listener from the EventDispatcher object.<!--translator-end:alternativa.engine3d.core:Object3D/removeEventListener-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeFace()">removeFace</a>(face:<a href="../core/Face.html">Face</a>):<a href="../core/Face.html">Face</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/removeFace-short-->Removes face by instance.<!--translator-end:alternativa.engine3d.objects:Mesh/removeFace-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeFaceById()">removeFaceById</a>(id:Object):<a href="../core/Face.html">Face</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/removeFaceById-short-->Removes face by identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/removeFaceById-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeVertex()">removeVertex</a>(vertex:<a href="../core/Vertex.html">Vertex</a>):<a href="../core/Vertex.html">Vertex</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/removeVertex-short-->Removes face by instance.<!--translator-end:alternativa.engine3d.objects:Mesh/removeVertex-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeVertexById()">removeVertexById</a>(id:Object):<a href="../core/Vertex.html">Vertex</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/removeVertexById-short-->Removes vertex by identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/removeVertexById-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setMaterialToAllFaces()">setMaterialToAllFaces</a>(material:<a href="../materials/Material.html">Material</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/setMaterialToAllFaces-short-->Sets material to all faces.<!--translator-end:alternativa.engine3d.objects:Mesh/setMaterialToAllFaces-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#toString()">toString</a>():String</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/toString-short-->Returns the string presentation of the specified object.<!--translator-end:alternativa.engine3d.core:Object3D/toString-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#weldFaces()">weldFaces</a>(angleThreshold:Number = 0, uvThreshold:Number = 0, convexThreshold:Number = 0, pairWeld:Boolean = false):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/weldFaces-short-->Weld neighboring faces which form flat convex.<!--translator-end:alternativa.engine3d.objects:Mesh/weldFaces-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#weldVertices()">weldVertices</a>(distanceThreshold:Number = 0, uvThreshold:Number = 0):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/weldVertices-short-->Welds vertices with the same coordinates and UV.<!--translator-end:alternativa.engine3d.objects:Mesh/weldVertices-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#willTrigger()">willTrigger</a>(type:String):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/willTrigger-short-->Checks whether an event listener is registered with this EventDispatcher object or any of its ancestors for the specified event type.<!--translator-end:alternativa.engine3d.core:Object3D/willTrigger-short--></div>
+</td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+</table>
+</div>
+<a name="protectedMethodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Methods</div>
+<table id="summaryTableProtectedMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clonePropertiesFrom()">clonePropertiesFrom</a>(source:<a href="../core/Object3D.html">Object3D</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.objects:Mesh/protected:clonePropertiesFrom-short-->Copies the base properties.<!--translator-end:alternativa.engine3d.objects:Mesh/protected:clonePropertiesFrom-short--></div>
+</td><td class="summaryTableOwnerCol">Mesh</td>
+</tr>
+</table>
+</div>
+<a name="eventSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Events</div>
+<div class="showHideLinks">
+<div class="hideInheritedEvent" id="hideInheritedEvent">
+<a onclick="javascript:setInheritedVisible(false,'Event');" href="#eventSummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Events</a>
+</div>
+<div class="showInheritedEvent" id="showInheritedEvent">
+<a onclick="javascript:setInheritedVisible(true,'Event');" href="#eventSummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Events</a>
+</div>
+</div>
+<table id="summaryTableEvent" class="summaryTable hideInheritedEvent" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Event</th><th>Summary</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:click">click</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.click-->Dispatched when a user presses and releases the main button of the user's pointing device over the same object.<!--translator-end:alternativa.engine3d.core:Object3D/event.click--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:doubleClick">doubleClick</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.doubleClick-->Dispatched when a user presses and releases the main button of a pointing device twice in rapid succession over the same object when that object's doubleClickEnabled flag is set to true.<!--translator-end:alternativa.engine3d.core:Object3D/event.doubleClick--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:mouseDown">mouseDown</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseDown-->Dispatched when a user presses the pointing device button over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseDown--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:mouseMove">mouseMove</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseMove-->Dispatched when a user moves the pointing device while it is over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseMove--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:mouseOut">mouseOut</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseOut-->Dispatched when the user moves a pointing device away from an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseOut--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:mouseOver">mouseOver</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseOver-->Dispatched when the user moves a pointing device over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseOver--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:mouseUp">mouseUp</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseUp-->Dispatched when a user releases the pointing device button over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseUp--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:mouseWheel">mouseWheel</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseWheel-->Dispatched when a mouse wheel is spun over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseWheel--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:rollOut">rollOut</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.rollOut-->Dispatched when the user moves a pointing device away from an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.rollOut--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+<tr class="hideInheritedEvent">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/Object3D.html#event:rollOver">rollOver</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.rollOver-->Dispatched when the user moves a pointing device over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.rollOver--></td><td class="summaryTableOwnerCol"><a href="../core/Object3D.html">Object3D</a></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="clipping"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clipping</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var clipping:int = 2</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/clipping-->Object clipping mode by camera frustum. You can use following constants of <code>Clipping</code> class: <code>Clipping.BOUND_CULLING</code>, <code>Clipping.FACE_CULLING</code>, <code>Clipping.FACE_CLIPPING</code>.  Default value is <code>Clipping.FACE_CLIPPING</code>.<!--translator-end:alternativa.engine3d.objects:Mesh/clipping--></p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Clipping.html" target="">alternativa.engine3d.core.Clipping</a>
+</div>
+</div>
+<a name="faces"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">faces</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>faces:Vector</code>&nbsp;&nbsp;[read-only]<p><!--translator-start:alternativa.engine3d.objects:Mesh/faces/get-->List of face instances.<!--translator-end:alternativa.engine3d.objects:Mesh/faces/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get faces():Vector</code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+</div>
+</div>
+<a name="sorting"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sorting</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var sorting:int = 1</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/sorting-->Faces sorting mode. You can use the following constants to set <code>sorting</code> property: <code>Sorting.NONE</code>, <code>Sorting.AVERAGE_Z</code>, <code>Sorting.DYNAMIC_BSP</code>.  Default value is <code>Sorting.AVERAGE_Z</code>.<!--translator-end:alternativa.engine3d.objects:Mesh/sorting--></p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Sorting.html" target="">alternativa.engine3d.core.Sorting</a>
+</div>
+</div>
+<a name="threshold"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">threshold</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var threshold:Number = 0.01</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/threshold-->Geometrical threshold. It is small quantity where it is possible not to take into account values difference. It is used for temporary BSP-tree building in the <code>Sorting.DYNAMIC_BSP</code> mode. Default value is <code>0.01</code>.   <!--translator-end:alternativa.engine3d.objects:Mesh/threshold--></p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Sorting.html" target="">alternativa.engine3d.core.Sorting</a>
+</div>
+</div>
+<a name="vertices"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">vertices</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>vertices:Vector</code>&nbsp;&nbsp;[read-only]<p><!--translator-start:alternativa.engine3d.objects:Mesh/vertices/get-->List of vertices instances.<!--translator-end:alternativa.engine3d.objects:Mesh/vertices/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get vertices():Vector</code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Vertex.html" target="">alternativa.engine3d.core.Vertex</a>
+</div>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addFace()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addFace</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addFace(vertices:Vector, material:<a href="../materials/Material.html">Material</a> = null, id:Object = null):<a href="../core/Face.html">Face</a></code><p><!--translator-start:alternativa.engine3d.objects:Mesh/addFace-->Creates and adds new face.<!--translator-end:alternativa.engine3d.objects:Mesh/addFace--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">vertices</span>:Vector</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addFace/vertices-->Vector of instances of vertices.  Vertices must be inside given instance of <code>Mesh</code>.<!--translator-end:alternativa.engine3d.objects:Mesh/addFace/vertices--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">material</span>:<a href="../materials/Material.html">Material</a></code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addFace/material-->Material.<!--translator-end:alternativa.engine3d.objects:Mesh/addFace/material--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">id</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addFace/id-->Face identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/addFace/id--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/Face.html">Face</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addFace-return-->New face.<!--translator-end:alternativa.engine3d.objects:Mesh/addFace-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+<br>
+<a href="../materials/Material.html" target="">alternativa.engine3d.materials.Material</a>
+</div>
+</div>
+<a name="addFaceByIds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addFaceByIds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addFaceByIds(vertexIds:Array, material:<a href="../materials/Material.html">Material</a> = null, id:Object = null):<a href="../core/Face.html">Face</a></code><p><!--translator-start:alternativa.engine3d.objects:Mesh/addFaceByIds-->Creates and adss face by vertices identifiers. <!--translator-end:alternativa.engine3d.objects:Mesh/addFaceByIds--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">vertexIds</span>:Array</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addFaceByIds/vertexIds-->Vertices identifiers array. Vertices must be inside given instance of <code>Mesh</code>.<!--translator-end:alternativa.engine3d.objects:Mesh/addFaceByIds/vertexIds--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">material</span>:<a href="../materials/Material.html">Material</a></code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addFaceByIds/material-->Material.<!--translator-end:alternativa.engine3d.objects:Mesh/addFaceByIds/material--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">id</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addFaceByIds/id-->Face identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/addFaceByIds/id--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/Face.html">Face</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addFaceByIds-return-->New face.<!--translator-end:alternativa.engine3d.objects:Mesh/addFaceByIds-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+<br>
+<a href="../materials/Material.html" target="">alternativa.engine3d.materials.Material</a>
+</div>
+</div>
+<a name="addQuadFace()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addQuadFace</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addQuadFace(a:<a href="../core/Vertex.html">Vertex</a>, b:<a href="../core/Vertex.html">Vertex</a>, c:<a href="../core/Vertex.html">Vertex</a>, d:<a href="../core/Vertex.html">Vertex</a>, material:<a href="../materials/Material.html">Material</a> = null, id:Object = null):<a href="../core/Face.html">Face</a></code><p><!--translator-start:alternativa.engine3d.objects:Mesh/addQuadFace-->Creates and adds new quad face. Vertices must be inside given instance of <code>Mesh</code>.<!--translator-end:alternativa.engine3d.objects:Mesh/addQuadFace--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">a</span>:<a href="../core/Vertex.html">Vertex</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addQuadFace/a-->Vertex.<!--translator-end:alternativa.engine3d.objects:Mesh/addQuadFace/a--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">b</span>:<a href="../core/Vertex.html">Vertex</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addQuadFace/b-->Vertex.<!--translator-end:alternativa.engine3d.objects:Mesh/addQuadFace/b--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">c</span>:<a href="../core/Vertex.html">Vertex</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addQuadFace/c-->Vertex.<!--translator-end:alternativa.engine3d.objects:Mesh/addQuadFace/c--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">d</span>:<a href="../core/Vertex.html">Vertex</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addQuadFace/d-->Vertex.<!--translator-end:alternativa.engine3d.objects:Mesh/addQuadFace/d--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">material</span>:<a href="../materials/Material.html">Material</a></code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addQuadFace/material-->Material.<!--translator-end:alternativa.engine3d.objects:Mesh/addQuadFace/material--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">id</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addQuadFace/id-->Face identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/addQuadFace/id--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/Face.html">Face</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addQuadFace-return-->New face.<!--translator-end:alternativa.engine3d.objects:Mesh/addQuadFace-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+<br>
+<a href="../materials/Material.html" target="">alternativa.engine3d.materials.Material</a>
+</div>
+</div>
+<a name="addTriFace()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addTriFace</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addTriFace(a:<a href="../core/Vertex.html">Vertex</a>, b:<a href="../core/Vertex.html">Vertex</a>, c:<a href="../core/Vertex.html">Vertex</a>, material:<a href="../materials/Material.html">Material</a> = null, id:Object = null):<a href="../core/Face.html">Face</a></code><p><!--translator-start:alternativa.engine3d.objects:Mesh/addTriFace-->Creates and adds new triangle face. Vertices must be inside given instance of <code>Mesh</code>.<!--translator-end:alternativa.engine3d.objects:Mesh/addTriFace--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">a</span>:<a href="../core/Vertex.html">Vertex</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addTriFace/a-->Vertex.<!--translator-end:alternativa.engine3d.objects:Mesh/addTriFace/a--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">b</span>:<a href="../core/Vertex.html">Vertex</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addTriFace/b-->Vertex.<!--translator-end:alternativa.engine3d.objects:Mesh/addTriFace/b--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">c</span>:<a href="../core/Vertex.html">Vertex</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addTriFace/c-->Vertex.<!--translator-end:alternativa.engine3d.objects:Mesh/addTriFace/c--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">material</span>:<a href="../materials/Material.html">Material</a></code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addTriFace/material-->Material.<!--translator-end:alternativa.engine3d.objects:Mesh/addTriFace/material--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">id</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addTriFace/id-->Face identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/addTriFace/id--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/Face.html">Face</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addTriFace-return-->New face.<!--translator-end:alternativa.engine3d.objects:Mesh/addTriFace-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+<br>
+<a href="../materials/Material.html" target="">alternativa.engine3d.materials.Material</a>
+</div>
+</div>
+<a name="addVertex()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addVertex</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addVertex(x:Number, y:Number, z:Number, u:Number = 0, v:Number = 0, id:Object = null):<a href="../core/Vertex.html">Vertex</a></code><p><!--translator-start:alternativa.engine3d.objects:Mesh/addVertex-->Creates and adds new vertex.<!--translator-end:alternativa.engine3d.objects:Mesh/addVertex--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addVertex/x-->X coordinate.<!--translator-end:alternativa.engine3d.objects:Mesh/addVertex/x--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addVertex/y-->Y coordinate.<!--translator-end:alternativa.engine3d.objects:Mesh/addVertex/y--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">z</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addVertex/z-->Z coordinate.<!--translator-end:alternativa.engine3d.objects:Mesh/addVertex/z--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">u</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addVertex/u-->U texture coordinate.<!--translator-end:alternativa.engine3d.objects:Mesh/addVertex/u--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">v</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addVertex/v-->V texture coordinate.<!--translator-end:alternativa.engine3d.objects:Mesh/addVertex/v--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">id</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addVertex/id-->Vertex identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/addVertex/id--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/Vertex.html">Vertex</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addVertex-return-->New vertex.<!--translator-end:alternativa.engine3d.objects:Mesh/addVertex-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Vertex.html" target="">alternativa.engine3d.core.Vertex</a>
+</div>
+</div>
+<a name="addVerticesAndFaces()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addVerticesAndFaces</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addVerticesAndFaces(vertices:Vector, uvs:Vector, indices:Vector, poly:Boolean = false, material:<a href="../materials/Material.html">Material</a> = null):void</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/addVerticesAndFaces-->Creates and adds vertices and faces created of values supplied vectors.<!--translator-end:alternativa.engine3d.objects:Mesh/addVerticesAndFaces--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">vertices</span>:Vector</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addVerticesAndFaces/vertices-->Vertices coordinates vector. Vertices coordinates are represented as x1, y1, z1, x2, y2, z2 and so on.<!--translator-end:alternativa.engine3d.objects:Mesh/addVerticesAndFaces/vertices--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">uvs</span>:Vector</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addVerticesAndFaces/uvs-->Texture coordinates vector corresponding to vertices vector. Texture coordinates are represented as u1, v1, u2, v2  and so on. <!--translator-end:alternativa.engine3d.objects:Mesh/addVerticesAndFaces/uvs--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">indices</span>:Vector</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addVerticesAndFaces/indices-->Vector of indices.<!--translator-end:alternativa.engine3d.objects:Mesh/addVerticesAndFaces/indices--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">poly</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addVerticesAndFaces/poly-->Option for faces presentation as triangles or polygons. If <code>false</code> then indices will be interpreted as sequence of triangles, i.e. 1,2,3,4,3,2. If <code>true</code> then indices will be interpreted as sequence of polygons with amount of vertices indication, i.e. 3, 1,2,3, 4, 5,4,3,2.   <!--translator-end:alternativa.engine3d.objects:Mesh/addVerticesAndFaces/poly--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">material</span>:<a href="../materials/Material.html">Material</a></code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/addVerticesAndFaces/material-->Material for all faces.<!--translator-end:alternativa.engine3d.objects:Mesh/addVerticesAndFaces/material--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Vertex.html" target="">alternativa.engine3d.core.Vertex</a>
+<br>
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+<br>
+<a href="../materials/Material.html" target="">alternativa.engine3d.materials.Material</a>
+</div>
+</div>
+<a name="calculateFacesNormals()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">calculateFacesNormals</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function calculateFacesNormals(normalize:Boolean = true):void</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/calculateFacesNormals-->Computates faces normals. Should be invoked after each change of the geometry before rendering.<!--translator-end:alternativa.engine3d.objects:Mesh/calculateFacesNormals--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">normalize</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/calculateFacesNormals/normalize-->Normalization option. If <code>true</code>, then lengths of normals will be equal to one.<!--translator-end:alternativa.engine3d.objects:Mesh/calculateFacesNormals/normalize--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+</div>
+</div>
+<a name="calculateResolution()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">calculateResolution</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function calculateResolution(textureWidth:int, textureHeight:int, type:int = 1, matrix:Matrix3D = null):Number</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/calculateResolution-->Calculates how many units of 3D space correspond to one pixel of texture. It is useful for mipmapping. If textureMaterial's  if <code>mipMapping</code> value equal to <code>MipMapping.OBJECT_DISTANCE</code> or <code>MipMapping.PER_PIXEL</code>, it is useful to set result of this method in resolution property of material.<!--translator-end:alternativa.engine3d.objects:Mesh/calculateResolution--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">textureWidth</span>:int</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/calculateResolution/textureWidth-->Texture width.<!--translator-end:alternativa.engine3d.objects:Mesh/calculateResolution/textureWidth--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">textureHeight</span>:int</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/calculateResolution/textureHeight-->Texture height.<!--translator-end:alternativa.engine3d.objects:Mesh/calculateResolution/textureHeight--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:int</code> (default = <code>1</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/calculateResolution/type-->Calculation method: 0 - by first edge, 1 - average value, 2 - max value, 3 - min value.<!--translator-end:alternativa.engine3d.objects:Mesh/calculateResolution/type--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">matrix</span>:Matrix3D</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/calculateResolution/matrix-->Transformation matrix.<!--translator-end:alternativa.engine3d.objects:Mesh/calculateResolution/matrix--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/calculateResolution-return-->Resolution.  <!--translator-end:alternativa.engine3d.objects:Mesh/calculateResolution-return--></td>
+</tr>
+</table>
+</div>
+<a name="calculateVerticesNormals()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">calculateVerticesNormals</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function calculateVerticesNormals(weldSeams:Boolean = false, distanceThreshold:Number = 0):void</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/calculateVerticesNormals-->Computates vertices normals. Vertices normals are used only by some materials, e.g. <code>VertexLightMaterial</code>.<!--translator-end:alternativa.engine3d.objects:Mesh/calculateVerticesNormals--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">weldSeams</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/calculateVerticesNormals/weldSeams-->If <code>true</code> then vertexes, placed closely (in the distance less than <code>distanceThreshold</code>), are counted as the same.<!--translator-end:alternativa.engine3d.objects:Mesh/calculateVerticesNormals/weldSeams--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">distanceThreshold</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/calculateVerticesNormals/distanceThreshold-->Threshold, in the limits of which coordinates of vertices are counted equal.<!--translator-end:alternativa.engine3d.objects:Mesh/calculateVerticesNormals/distanceThreshold--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Vertex.html" target="">alternativa.engine3d.core.Vertex</a>
+</div>
+</div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function clone():<a href="../core/Object3D.html">Object3D</a></code><p><!--translator-start:alternativa.engine3d.objects:Mesh/clone-->Returns an object that is an exact copy of the original object.<!--translator-end:alternativa.engine3d.objects:Mesh/clone--></p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/Object3D.html">Object3D</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/clone-return-->Original object clone.<!--translator-end:alternativa.engine3d.objects:Mesh/clone-return--></td>
+</tr>
+</table>
+</div>
+<a name="clonePropertiesFrom()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clonePropertiesFrom</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected override function clonePropertiesFrom(source:<a href="../core/Object3D.html">Object3D</a>):void</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/protected:clonePropertiesFrom-->Copies the base properties.<!--translator-end:alternativa.engine3d.objects:Mesh/protected:clonePropertiesFrom--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">source</span>:<a href="../core/Object3D.html">Object3D</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/protected:clonePropertiesFrom/source-->Source object.<!--translator-end:alternativa.engine3d.objects:Mesh/protected:clonePropertiesFrom/source--></td>
+</tr>
+</table>
+</div>
+<a name="containsFace()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">containsFace</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function containsFace(face:<a href="../core/Face.html">Face</a>):Boolean</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/containsFace-->Checks if there is a face in the object.<!--translator-end:alternativa.engine3d.objects:Mesh/containsFace--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">face</span>:<a href="../core/Face.html">Face</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/containsFace/face-->Face.<!--translator-end:alternativa.engine3d.objects:Mesh/containsFace/face--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/containsFace-return--><code>true</code>, if there is a face in the object; <code>false</code> otherwise.<!--translator-end:alternativa.engine3d.objects:Mesh/containsFace-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+</div>
+</div>
+<a name="containsFaceWithId()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">containsFaceWithId</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function containsFaceWithId(id:Object):Boolean</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/containsFaceWithId-->Checks if there is a face in the object with indentifier.<!--translator-end:alternativa.engine3d.objects:Mesh/containsFaceWithId--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">id</span>:Object</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/containsFaceWithId/id-->Identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/containsFaceWithId/id--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/containsFaceWithId-return--><code>true</code>, if there is a face in the object; <code>false</code> otherwise.<!--translator-end:alternativa.engine3d.objects:Mesh/containsFaceWithId-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+</div>
+</div>
+<a name="containsVertex()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">containsVertex</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function containsVertex(vertex:<a href="../core/Vertex.html">Vertex</a>):Boolean</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/containsVertex-->Checks if there is a vertex in the object.<!--translator-end:alternativa.engine3d.objects:Mesh/containsVertex--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">vertex</span>:<a href="../core/Vertex.html">Vertex</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/containsVertex/vertex-->Vertex.<!--translator-end:alternativa.engine3d.objects:Mesh/containsVertex/vertex--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/containsVertex-return--><code>true</code>, if there is a vertex in the object; <code>false</code> otherwise.<!--translator-end:alternativa.engine3d.objects:Mesh/containsVertex-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Vertex.html" target="">alternativa.engine3d.core.Vertex</a>
+</div>
+</div>
+<a name="containsVertexWithId()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">containsVertexWithId</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function containsVertexWithId(id:Object):Boolean</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/containsVertexWithId-->Checks if there is a vertex in the object with indentifier.<!--translator-end:alternativa.engine3d.objects:Mesh/containsVertexWithId--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">id</span>:Object</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/containsVertexWithId/id-->Identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/containsVertexWithId/id--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/containsVertexWithId-return--><code>true</code>, if there is a vertex in the object; <code>false</code> otherwise.<!--translator-end:alternativa.engine3d.objects:Mesh/containsVertexWithId-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Vertex.html" target="">alternativa.engine3d.core.Vertex</a>
+</div>
+</div>
+<a name="getFaceById()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getFaceById</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getFaceById(id:Object):<a href="../core/Face.html">Face</a></code><p><!--translator-start:alternativa.engine3d.objects:Mesh/getFaceById-->Returns face by identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/getFaceById--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">id</span>:Object</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/getFaceById/id-->Identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/getFaceById/id--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/Face.html">Face</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/getFaceById-return-->Face.<!--translator-end:alternativa.engine3d.objects:Mesh/getFaceById-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+</div>
+</div>
+<a name="getVertexById()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getVertexById</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getVertexById(id:Object):<a href="../core/Vertex.html">Vertex</a></code><p><!--translator-start:alternativa.engine3d.objects:Mesh/getVertexById-->Returns vertex by identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/getVertexById--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">id</span>:Object</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/getVertexById/id-->Identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/getVertexById/id--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/Vertex.html">Vertex</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/getVertexById-return-->Vertex.<!--translator-end:alternativa.engine3d.objects:Mesh/getVertexById-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Vertex.html" target="">alternativa.engine3d.core.Vertex</a>
+</div>
+</div>
+<a name="intersectRay()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">intersectRay</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function intersectRay(origin:Vector3D, direction:Vector3D, excludedObjects:Dictionary = null, camera:<a href="../core/Camera3D.html">Camera3D</a> = null):<a href="../core/RayIntersectionData.html">RayIntersectionData</a></code><p><!--translator-start:alternativa.engine3d.objects:Mesh/intersectRay-->Searches for the ray intersection.<!--translator-end:alternativa.engine3d.objects:Mesh/intersectRay--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">origin</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/intersectRay/origin-->Ray origin.<!--translator-end:alternativa.engine3d.objects:Mesh/intersectRay/origin--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">direction</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/intersectRay/direction-->Ray direction.<!--translator-end:alternativa.engine3d.objects:Mesh/intersectRay/direction--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">excludedObjects</span>:Dictionary</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/intersectRay/excludedObjects-->The objects that are keys of this dictionary will be exluded from intersection test.<!--translator-end:alternativa.engine3d.objects:Mesh/intersectRay/excludedObjects--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">camera</span>:<a href="../core/Camera3D.html">Camera3D</a></code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/intersectRay/camera-->The camera for <code>Sprite3D</code> objects intersection test.<!--translator-end:alternativa.engine3d.objects:Mesh/intersectRay/camera--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/RayIntersectionData.html">RayIntersectionData</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/intersectRay-return-->Intersection test result -  <code>RayIntersectionData</code> object. If there is no intersection the value of null will be returned.<!--translator-end:alternativa.engine3d.objects:Mesh/intersectRay-return--></td>
+</tr>
+</table>
+</div>
+<a name="optimizeForDynamicBSP()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">optimizeForDynamicBSP</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function optimizeForDynamicBSP(iterations:int = 1):void</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/optimizeForDynamicBSP-->Puts faces in specified sequence to minimize amount of splits in <code>Sorting.DYNAMIC_BSP</code> mode. <!--translator-end:alternativa.engine3d.objects:Mesh/optimizeForDynamicBSP--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">iterations</span>:int</code> (default = <code>1</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/optimizeForDynamicBSP/iterations-->Analysis quality option.<!--translator-end:alternativa.engine3d.objects:Mesh/optimizeForDynamicBSP/iterations--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+<br>
+<a href="../core/Sorting.html" target="">alternativa.engine3d.core.Sorting</a>
+</div>
+</div>
+<a name="removeFace()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeFace</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeFace(face:<a href="../core/Face.html">Face</a>):<a href="../core/Face.html">Face</a></code><p><!--translator-start:alternativa.engine3d.objects:Mesh/removeFace-->Removes face by instance.<!--translator-end:alternativa.engine3d.objects:Mesh/removeFace--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">face</span>:<a href="../core/Face.html">Face</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/removeFace/face-->Face.<!--translator-end:alternativa.engine3d.objects:Mesh/removeFace/face--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/Face.html">Face</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/removeFace-return-->Removable face.<!--translator-end:alternativa.engine3d.objects:Mesh/removeFace-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+</div>
+</div>
+<a name="removeFaceById()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeFaceById</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeFaceById(id:Object):<a href="../core/Face.html">Face</a></code><p><!--translator-start:alternativa.engine3d.objects:Mesh/removeFaceById-->Removes face by identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/removeFaceById--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">id</span>:Object</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/removeFaceById/id-->Identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/removeFaceById/id--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/Face.html">Face</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/removeFaceById-return-->Removable face.<!--translator-end:alternativa.engine3d.objects:Mesh/removeFaceById-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+</div>
+</div>
+<a name="removeVertex()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeVertex</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeVertex(vertex:<a href="../core/Vertex.html">Vertex</a>):<a href="../core/Vertex.html">Vertex</a></code><p><!--translator-start:alternativa.engine3d.objects:Mesh/removeVertex-->Removes face by instance.<!--translator-end:alternativa.engine3d.objects:Mesh/removeVertex--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">vertex</span>:<a href="../core/Vertex.html">Vertex</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/removeVertex/vertex-->Vertex.<!--translator-end:alternativa.engine3d.objects:Mesh/removeVertex/vertex--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/Vertex.html">Vertex</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/removeVertex-return-->Removable vertex.<!--translator-end:alternativa.engine3d.objects:Mesh/removeVertex-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Vertex.html" target="">alternativa.engine3d.core.Vertex</a>
+</div>
+</div>
+<a name="removeVertexById()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeVertexById</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeVertexById(id:Object):<a href="../core/Vertex.html">Vertex</a></code><p><!--translator-start:alternativa.engine3d.objects:Mesh/removeVertexById-->Removes vertex by identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/removeVertexById--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">id</span>:Object</code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/removeVertexById/id-->Identifier.<!--translator-end:alternativa.engine3d.objects:Mesh/removeVertexById/id--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/Vertex.html">Vertex</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/removeVertexById-return-->Removable vertex.<!--translator-end:alternativa.engine3d.objects:Mesh/removeVertexById-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Vertex.html" target="">alternativa.engine3d.core.Vertex</a>
+</div>
+</div>
+<a name="setMaterialToAllFaces()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setMaterialToAllFaces</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setMaterialToAllFaces(material:<a href="../materials/Material.html">Material</a>):void</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/setMaterialToAllFaces-->Sets material to all faces. <!--translator-end:alternativa.engine3d.objects:Mesh/setMaterialToAllFaces--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">material</span>:<a href="../materials/Material.html">Material</a></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/setMaterialToAllFaces/material-->Material.<!--translator-end:alternativa.engine3d.objects:Mesh/setMaterialToAllFaces/material--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../materials/Material.html" target="">alternativa.engine3d.materials.Material</a>
+<br>
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+</div>
+</div>
+<a name="weldFaces()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">weldFaces</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function weldFaces(angleThreshold:Number = 0, uvThreshold:Number = 0, convexThreshold:Number = 0, pairWeld:Boolean = false):void</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/weldFaces-->Weld neighboring faces which form flat convex. Faces get new digital identifiers after the welding. <code>weldFaces()</code> should be called after <code>weldVertices()</code>.<!--translator-end:alternativa.engine3d.objects:Mesh/weldFaces--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">angleThreshold</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/weldFaces/angleThreshold-->Acceptable angle between normals of welding neighboring faces.   <!--translator-end:alternativa.engine3d.objects:Mesh/weldFaces/angleThreshold--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">uvThreshold</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/weldFaces/uvThreshold-->Acceptable treshold of uv-coordinates to connect welding faces through UV.<!--translator-end:alternativa.engine3d.objects:Mesh/weldFaces/uvThreshold--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">convexThreshold</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/weldFaces/convexThreshold-->Quantity that reduce acceptable angle between allied edges of welding faces. <!--translator-end:alternativa.engine3d.objects:Mesh/weldFaces/convexThreshold--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pairWeld</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/weldFaces/pairWeld-->Option of welding by pairs.<!--translator-end:alternativa.engine3d.objects:Mesh/weldFaces/pairWeld--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Face.html" target="">alternativa.engine3d.core.Face</a>
+<br>
+<a href="../objects/Mesh.html#weldVertices()" target="">weldVertices()</a>
+</div>
+</div>
+<a name="weldVertices()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">weldVertices</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function weldVertices(distanceThreshold:Number = 0, uvThreshold:Number = 0):void</code><p><!--translator-start:alternativa.engine3d.objects:Mesh/weldVertices-->Welds vertices with the same coordinates and UV.  Coordinates equality is checked taking into account the treshold. Vertices get new digital identifiers after the welding. <code>weldVertices()</code> should be called before <code>weldFaces()</code>. <!--translator-end:alternativa.engine3d.objects:Mesh/weldVertices--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">distanceThreshold</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/weldVertices/distanceThreshold-->Acceptable coordinates difference.   <!--translator-end:alternativa.engine3d.objects:Mesh/weldVertices/distanceThreshold--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">uvThreshold</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.objects:Mesh/weldVertices/uvThreshold-->Acceptable UV-coordinates difference. <!--translator-end:alternativa.engine3d.objects:Mesh/weldVertices/uvThreshold--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Vertex.html" target="">alternativa.engine3d.core.Vertex</a>
+<br>
+<a href="../objects/Mesh.html#weldFaces()" target="">weldFaces()</a>
+</div>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

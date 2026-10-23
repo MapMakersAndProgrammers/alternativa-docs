@@ -1,0 +1,1026 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="/favicon.ico" rel="icon">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="Object3D,alternativa.engine3d.core.Object3D,alpha,blendMode,boundMaxX,boundMaxY,boundMaxZ,boundMinX,boundMinY,boundMinZ,colorTransform,doubleClickEnabled,filters,mouseEnabled,name,rotationX,rotationY,rotationZ,scaleX,scaleY,scaleZ,useHandCursor,visible,x,y,z,concatenatedMatrix,matrix,parent,addEventListener,calculateBounds,calculateResolution,clone,clonePropertiesFrom,dispatchEvent,globalToLocal,hasEventListener,intersectRay,localToGlobal,removeEventListener,toString,willTrigger" name="keywords">
+<title>alternativa.engine3d.core.Object3D</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Object3D - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?alternativa/engine3d/core/Object3D.html&amp;alternativa/engine3d/core/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Object3D</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Object3D"); titleBar_setSubNav(false,true,false,false,true,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">alternativa.engine3d.core</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Object3D</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Implements</td><td>flash.events.IEventDispatcher</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Subclasses</td><td><a href="../objects/BSP.html">BSP</a>, <a href="../core/Camera3D.html">Camera3D</a>, <a href="../objects/Joint.html">Joint</a>, <a href="../core/Light3D.html">Light3D</a>, <a href="../objects/Mesh.html">Mesh</a>, <a href="../core/Object3DContainer.html">Object3DContainer</a>, <a href="../objects/Occluder.html">Occluder</a>, <a href="../objects/Sprite3D.html">Sprite3D</a></td>
+</tr>
+</table>
+<p></p><!--translator-start:alternativa.engine3d.core:Object3D-->Object3D class ia a base class for all 3D objects.<!--translator-end:alternativa.engine3d.core:Object3D--><p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#alpha">alpha</a> : Number = 1<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/alpha-short-->Alpha transparency value.<!--translator-end:alternativa.engine3d.core:Object3D/alpha-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#blendMode">blendMode</a> : String = "normal"<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/blendMode-short-->A value from the <code>flash.<!--translator-end:alternativa.engine3d.core:Object3D/blendMode-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#boundMaxX">boundMaxX</a> : Number = 1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMaxX-short-->Right bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMaxX-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#boundMaxY">boundMaxY</a> : Number = 1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMaxY-short-->Front bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMaxY-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#boundMaxZ">boundMaxZ</a> : Number = 1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMaxZ-short-->Top bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMaxZ-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#boundMinX">boundMinX</a> : Number = -1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMinX-short-->Left bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMinX-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#boundMinY">boundMinY</a> : Number = -1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMinY-short-->Back bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMinY-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#boundMinZ">boundMinZ</a> : Number = -1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/boundMinZ-short-->Bottom bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMinZ-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#colorTransform">colorTransform</a> : ColorTransform = null<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/colorTransform-short-->A ColorTransform object containing values that universally adjust the colors in the display object.<!--translator-end:alternativa.engine3d.core:Object3D/colorTransform-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#concatenatedMatrix">concatenatedMatrix</a> : Matrix3D<div class="summaryTableDescription">[read-only] <!--translator-start:alternativa.engine3d.core:Object3D/concatenatedMatrix/get-short-->A <code>Matrix3D</code> object which is the combined result of transformation matrices of object and all its parens.<!--translator-end:alternativa.engine3d.core:Object3D/concatenatedMatrix/get-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#doubleClickEnabled">doubleClickEnabled</a> : Boolean = false<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/doubleClickEnabled-short-->Specifies whether the object receives <code>doubleClick</code> events.<!--translator-end:alternativa.engine3d.core:Object3D/doubleClickEnabled-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#filters">filters</a> : Array = null<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/filters-short-->An indexed array that contains each filter object currently associated with the display object.<!--translator-end:alternativa.engine3d.core:Object3D/filters-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#matrix">matrix</a> : Matrix3D<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/matrix/get-short--><code>Matrix3D</code> object.<!--translator-end:alternativa.engine3d.core:Object3D/matrix/get-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#mouseEnabled">mouseEnabled</a> : Boolean = true<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/mouseEnabled-short-->Specifies whether this object receives mouse messages.<!--translator-end:alternativa.engine3d.core:Object3D/mouseEnabled-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#name">name</a> : String<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/name-short-->Object name.<!--translator-end:alternativa.engine3d.core:Object3D/name-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#parent">parent</a> : <a href="../core/Object3DContainer.html">Object3DContainer</a>
+<div class="summaryTableDescription">[read-only] <!--translator-start:alternativa.engine3d.core:Object3D/parent/get-short-->Indicates the Object3DContainer object that contains this display object.<!--translator-end:alternativa.engine3d.core:Object3D/parent/get-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rotationX">rotationX</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/rotationX-short-->Rotation angle by X axis (in radians).<!--translator-end:alternativa.engine3d.core:Object3D/rotationX-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rotationY">rotationY</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/rotationY-short-->Rotation angle by Y axis (in radians).<!--translator-end:alternativa.engine3d.core:Object3D/rotationY-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rotationZ">rotationZ</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/rotationZ-short-->Rotation angle by Z axis (in radians).<!--translator-end:alternativa.engine3d.core:Object3D/rotationZ-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#scaleX">scaleX</a> : Number = 1<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/scaleX-short-->Scale by X axis.<!--translator-end:alternativa.engine3d.core:Object3D/scaleX-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#scaleY">scaleY</a> : Number = 1<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/scaleY-short-->Scale by Y axis.<!--translator-end:alternativa.engine3d.core:Object3D/scaleY-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#scaleZ">scaleZ</a> : Number = 1<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/scaleZ-short-->Scale by Z axis.<!--translator-end:alternativa.engine3d.core:Object3D/scaleZ-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#useHandCursor">useHandCursor</a> : Boolean = false<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/useHandCursor-short-->Set this property to <code>true</code> to show "hand" mouse cursor while hovering the object, <code>false</code> otherwise.<!--translator-end:alternativa.engine3d.core:Object3D/useHandCursor-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#visible">visible</a> : Boolean = true<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/visible-short-->Whether or not the display object is visible.<!--translator-end:alternativa.engine3d.core:Object3D/visible-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#x">x</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/x-short-->X coordinate.<!--translator-end:alternativa.engine3d.core:Object3D/x-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#y">y</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/y-short-->Y coordinate.<!--translator-end:alternativa.engine3d.core:Object3D/y-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#z">z</a> : Number = 0<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/z-short-->Z coordinate.<!--translator-end:alternativa.engine3d.core:Object3D/z-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addEventListener()">addEventListener</a>(type:String, listener:Function, useCapture:Boolean = false, priority:int = 0, useWeakReference:Boolean = false):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/addEventListener-short-->Registers an event listener object with an EventDispatcher object so that the listener receives notification of an event.<!--translator-end:alternativa.engine3d.core:Object3D/addEventListener-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#calculateBounds()">calculateBounds</a>():void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/calculateBounds-short-->Calculates object bounds in its space.<!--translator-end:alternativa.engine3d.core:Object3D/calculateBounds-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#calculateResolution()">calculateResolution</a>(textureWidth:int, textureHeight:int, type:int = 1, matrix:Matrix3D = null):Number</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/calculateResolution-short-->Calculates how many units of 3D space correspond to one pixel of texture.<!--translator-end:alternativa.engine3d.core:Object3D/calculateResolution-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>():<a href="../core/Object3D.html">Object3D</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/clone-short-->Returns an object that is an exact copy of the original object.<!--translator-end:alternativa.engine3d.core:Object3D/clone-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispatchEvent()">dispatchEvent</a>(event:Event):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/dispatchEvent-short-->Dispatches an event into the event flow.<!--translator-end:alternativa.engine3d.core:Object3D/dispatchEvent-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#globalToLocal()">globalToLocal</a>(point:Vector3D):Vector3D</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/globalToLocal-short-->Transforms a point from global space to local spce of the object.<!--translator-end:alternativa.engine3d.core:Object3D/globalToLocal-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#hasEventListener()">hasEventListener</a>(type:String):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/hasEventListener-short-->Checks whether the EventDispatcher object has any listeners registered for a specific type of event.<!--translator-end:alternativa.engine3d.core:Object3D/hasEventListener-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#intersectRay()">intersectRay</a>(origin:Vector3D, direction:Vector3D, excludedObjects:Dictionary = null, camera:<a href="Camera3D.html">Camera3D</a> = null):<a href="../core/RayIntersectionData.html">RayIntersectionData</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/intersectRay-short-->Searches for the ray intersection.<!--translator-end:alternativa.engine3d.core:Object3D/intersectRay-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#localToGlobal()">localToGlobal</a>(point:Vector3D):Vector3D</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/localToGlobal-short-->Transforms a point from local space of object to global spce.<!--translator-end:alternativa.engine3d.core:Object3D/localToGlobal-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeEventListener()">removeEventListener</a>(type:String, listener:Function, useCapture:Boolean = false):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/removeEventListener-short-->Removes a listener from the EventDispatcher object.<!--translator-end:alternativa.engine3d.core:Object3D/removeEventListener-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():String</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/toString-short-->Returns the string presentation of the specified object.<!--translator-end:alternativa.engine3d.core:Object3D/toString-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#willTrigger()">willTrigger</a>(type:String):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/willTrigger-short-->Checks whether an event listener is registered with this EventDispatcher object or any of its ancestors for the specified event type.<!--translator-end:alternativa.engine3d.core:Object3D/willTrigger-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+</table>
+</div>
+<a name="protectedMethodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Methods</div>
+<table id="summaryTableProtectedMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clonePropertiesFrom()">clonePropertiesFrom</a>(source:<a href="Object3D.html">Object3D</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:Object3D/protected:clonePropertiesFrom-short-->Copies the base properties.<!--translator-end:alternativa.engine3d.core:Object3D/protected:clonePropertiesFrom-short--></div>
+</td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+</table>
+</div>
+<a name="eventSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Events</div>
+<table id="summaryTableEvent" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Event</th><th>Summary</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:click">click</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.click-->Dispatched when a user presses and releases the main button of the user's pointing device over the same object.<!--translator-end:alternativa.engine3d.core:Object3D/event.click--></td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:doubleClick">doubleClick</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.doubleClick-->Dispatched when a user presses and releases the main button of a pointing device twice in rapid succession over the same object when that object's doubleClickEnabled flag is set to true.<!--translator-end:alternativa.engine3d.core:Object3D/event.doubleClick--></td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:mouseDown">mouseDown</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseDown-->Dispatched when a user presses the pointing device button over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseDown--></td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:mouseMove">mouseMove</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseMove-->Dispatched when a user moves the pointing device while it is over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseMove--></td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:mouseOut">mouseOut</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseOut-->Dispatched when the user moves a pointing device away from an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseOut--></td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:mouseOver">mouseOver</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseOver-->Dispatched when the user moves a pointing device over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseOver--></td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:mouseUp">mouseUp</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseUp-->Dispatched when a user releases the pointing device button over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseUp--></td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:mouseWheel">mouseWheel</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.mouseWheel-->Dispatched when a mouse wheel is spun over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.mouseWheel--></td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:rollOut">rollOut</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.rollOut-->Dispatched when the user moves a pointing device away from an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.rollOut--></td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:rollOver">rollOver</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol"><!--translator-start:alternativa.engine3d.core:Object3D/event.rollOver-->Dispatched when the user moves a pointing device over an object.<!--translator-end:alternativa.engine3d.core:Object3D/event.rollOver--></td><td class="summaryTableOwnerCol">Object3D</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="alpha"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">alpha</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var alpha:Number = 1</code><p><!--translator-start:alternativa.engine3d.core:Object3D/alpha-->Alpha transparency value. Valid values are 0 to1. Default value is 1.   <!--translator-end:alternativa.engine3d.core:Object3D/alpha--></p></div>
+<a name="blendMode"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">blendMode</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var blendMode:String = "normal"</code><p><!--translator-start:alternativa.engine3d.core:Object3D/blendMode-->A value from the <code>flash.display.BlendMode</code> class that specifies which blend mode to use.<!--translator-end:alternativa.engine3d.core:Object3D/blendMode--></p></div>
+<a name="boundMaxX"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">boundMaxX</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var boundMaxX:Number = 1e+22</code><p><!--translator-start:alternativa.engine3d.core:Object3D/boundMaxX-->Right bound of object in its space. <!--translator-end:alternativa.engine3d.core:Object3D/boundMaxX--></p></div>
+<a name="boundMaxY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">boundMaxY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var boundMaxY:Number = 1e+22</code><p><!--translator-start:alternativa.engine3d.core:Object3D/boundMaxY-->Front bound of object in its space. <!--translator-end:alternativa.engine3d.core:Object3D/boundMaxY--></p></div>
+<a name="boundMaxZ"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">boundMaxZ</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var boundMaxZ:Number = 1e+22</code><p><!--translator-start:alternativa.engine3d.core:Object3D/boundMaxZ-->Top bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMaxZ--></p></div>
+<a name="boundMinX"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">boundMinX</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var boundMinX:Number = -1e+22</code><p><!--translator-start:alternativa.engine3d.core:Object3D/boundMinX-->Left bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMinX--></p></div>
+<a name="boundMinY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">boundMinY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var boundMinY:Number = -1e+22</code><p><!--translator-start:alternativa.engine3d.core:Object3D/boundMinY-->Back bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMinY--></p></div>
+<a name="boundMinZ"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">boundMinZ</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var boundMinZ:Number = -1e+22</code><p><!--translator-start:alternativa.engine3d.core:Object3D/boundMinZ-->Bottom bound of object in its space.<!--translator-end:alternativa.engine3d.core:Object3D/boundMinZ--></p></div>
+<a name="colorTransform"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">colorTransform</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var colorTransform:ColorTransform = null</code><p><!--translator-start:alternativa.engine3d.core:Object3D/colorTransform-->A ColorTransform object containing values that universally adjust the colors in the display object.<!--translator-end:alternativa.engine3d.core:Object3D/colorTransform--></p></div>
+<a name="concatenatedMatrix"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">concatenatedMatrix</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>concatenatedMatrix:Matrix3D</code>&nbsp;&nbsp;[read-only]<p><!--translator-start:alternativa.engine3d.core:Object3D/concatenatedMatrix/get-->A <code>Matrix3D</code> object which is the combined result of transformation matrices of object and all its parens.<!--translator-end:alternativa.engine3d.core:Object3D/concatenatedMatrix/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get concatenatedMatrix():Matrix3D</code>
+<br>
+</div>
+<a name="doubleClickEnabled"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">doubleClickEnabled</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var doubleClickEnabled:Boolean = false</code><p><!--translator-start:alternativa.engine3d.core:Object3D/doubleClickEnabled-->Specifies whether the object receives <code>doubleClick</code> events. Note: it is necessary for mouse events to set <code>interactive</code> property of <code>View</code> object to <code>true</code>.<!--translator-end:alternativa.engine3d.core:Object3D/doubleClickEnabled--></p></div>
+<a name="filters"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">filters</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var filters:Array = null</code><p><!--translator-start:alternativa.engine3d.core:Object3D/filters-->An indexed array that contains each filter object currently associated with the display object.<!--translator-end:alternativa.engine3d.core:Object3D/filters--></p></div>
+<a name="matrix"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">matrix</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>matrix:Matrix3D</code>&nbsp;&nbsp;[read-write]<p><!--translator-start:alternativa.engine3d.core:Object3D/matrix/get--><code>Matrix3D</code> object.<!--translator-end:alternativa.engine3d.core:Object3D/matrix/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get matrix():Matrix3D</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set matrix(value:Matrix3D):void</code>
+<br>
+</div>
+<a name="mouseEnabled"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mouseEnabled</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var mouseEnabled:Boolean = true</code><p><!--translator-start:alternativa.engine3d.core:Object3D/mouseEnabled-->Specifies whether this object receives mouse messages. The default value is <code>true</code>. Note: it is necessary for mouse events to set <code>interactive</code> property of <code>View</code> object to <code>true</code>.<!--translator-end:alternativa.engine3d.core:Object3D/mouseEnabled--></p></div>
+<a name="name"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">name</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var name:String</code><p><!--translator-start:alternativa.engine3d.core:Object3D/name-->Object name.<!--translator-end:alternativa.engine3d.core:Object3D/name--></p></div>
+<a name="parent"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">parent</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>parent:<a href="../core/Object3DContainer.html">Object3DContainer</a></code>&nbsp;&nbsp;[read-only]<p><!--translator-start:alternativa.engine3d.core:Object3D/parent/get-->Indicates the Object3DContainer object that contains this display object.<!--translator-end:alternativa.engine3d.core:Object3D/parent/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get parent():<a href="../core/Object3DContainer.html">Object3DContainer</a></code>
+<br>
+</div>
+<a name="rotationX"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rotationX</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var rotationX:Number = 0</code><p><!--translator-start:alternativa.engine3d.core:Object3D/rotationX-->Rotation angle by X axis (in radians).<!--translator-end:alternativa.engine3d.core:Object3D/rotationX--></p></div>
+<a name="rotationY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rotationY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var rotationY:Number = 0</code><p><!--translator-start:alternativa.engine3d.core:Object3D/rotationY-->Rotation angle by Y axis (in radians).<!--translator-end:alternativa.engine3d.core:Object3D/rotationY--></p></div>
+<a name="rotationZ"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rotationZ</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var rotationZ:Number = 0</code><p><!--translator-start:alternativa.engine3d.core:Object3D/rotationZ-->Rotation angle by Z axis (in radians).<!--translator-end:alternativa.engine3d.core:Object3D/rotationZ--></p></div>
+<a name="scaleX"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scaleX</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var scaleX:Number = 1</code><p><!--translator-start:alternativa.engine3d.core:Object3D/scaleX-->Scale by X axis.<!--translator-end:alternativa.engine3d.core:Object3D/scaleX--></p></div>
+<a name="scaleY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scaleY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var scaleY:Number = 1</code><p><!--translator-start:alternativa.engine3d.core:Object3D/scaleY-->Scale by Y axis.<!--translator-end:alternativa.engine3d.core:Object3D/scaleY--></p></div>
+<a name="scaleZ"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scaleZ</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var scaleZ:Number = 1</code><p><!--translator-start:alternativa.engine3d.core:Object3D/scaleZ-->Scale by Z axis.<!--translator-end:alternativa.engine3d.core:Object3D/scaleZ--></p></div>
+<a name="useHandCursor"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">useHandCursor</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var useHandCursor:Boolean = false</code><p><!--translator-start:alternativa.engine3d.core:Object3D/useHandCursor-->Set this property to <code>true</code> to show "hand" mouse cursor while hovering the object, <code>false</code> otherwise.<!--translator-end:alternativa.engine3d.core:Object3D/useHandCursor--></p></div>
+<a name="visible"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">visible</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var visible:Boolean = true</code><p><!--translator-start:alternativa.engine3d.core:Object3D/visible-->Whether or not the display object is visible.<!--translator-end:alternativa.engine3d.core:Object3D/visible--></p></div>
+<a name="x"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">x</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var x:Number = 0</code><p><!--translator-start:alternativa.engine3d.core:Object3D/x-->X coordinate.<!--translator-end:alternativa.engine3d.core:Object3D/x--></p></div>
+<a name="y"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">y</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var y:Number = 0</code><p><!--translator-start:alternativa.engine3d.core:Object3D/y-->Y coordinate.<!--translator-end:alternativa.engine3d.core:Object3D/y--></p></div>
+<a name="z"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">z</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var z:Number = 0</code><p><!--translator-start:alternativa.engine3d.core:Object3D/z-->Z coordinate.<!--translator-end:alternativa.engine3d.core:Object3D/z--></p></div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addEventListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addEventListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addEventListener(type:String, listener:Function, useCapture:Boolean = false, priority:int = 0, useWeakReference:Boolean = false):void</code><p><!--translator-start:alternativa.engine3d.core:Object3D/addEventListener-->Registers an event listener object with an EventDispatcher object so that the listener receives notification of an event. Note: it is necessary for mouse events to set <code>interactive</code> property of <code>View</code> object to <code>true</code>.<!--translator-end:alternativa.engine3d.core:Object3D/addEventListener--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/addEventListener/type-->Event type.<!--translator-end:alternativa.engine3d.core:Object3D/addEventListener/type--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">listener</span>:Function</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/addEventListener/listener-->Event listener.<!--translator-end:alternativa.engine3d.core:Object3D/addEventListener/listener--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">useCapture</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/addEventListener/useCapture-->Specifies whether the listener was registered for the capture phase or the target and bubbling phases.<!--translator-end:alternativa.engine3d.core:Object3D/addEventListener/useCapture--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">priority</span>:int</code> (default = <code>0</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/addEventListener/priority-->The priority level of the event listener.<!--translator-end:alternativa.engine3d.core:Object3D/addEventListener/priority--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">useWeakReference</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/addEventListener/useWeakReference-->Determines whether the reference to the listener is strong or weak.<!--translator-end:alternativa.engine3d.core:Object3D/addEventListener/useWeakReference--></td>
+</tr>
+</table>
+</div>
+<a name="calculateBounds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">calculateBounds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function calculateBounds():void</code><p><!--translator-start:alternativa.engine3d.core:Object3D/calculateBounds-->Calculates object bounds in its space.<!--translator-end:alternativa.engine3d.core:Object3D/calculateBounds--></p></div>
+<a name="calculateResolution()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">calculateResolution</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function calculateResolution(textureWidth:int, textureHeight:int, type:int = 1, matrix:Matrix3D = null):Number</code><p><!--translator-start:alternativa.engine3d.core:Object3D/calculateResolution-->Calculates how many units of 3D space correspond to one pixel of texture. It is useful for mipmapping. If textureMaterial's  if <code>mipMapping</code> value equal to <code>MipMapping.OBJECT_DISTANCE</code> or <code>MipMapping.PER_PIXEL</code>, it is useful to set result of this method in resolution property of material.<!--translator-end:alternativa.engine3d.core:Object3D/calculateResolution--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">textureWidth</span>:int</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/calculateResolution/textureWidth-->Texture width.<!--translator-end:alternativa.engine3d.core:Object3D/calculateResolution/textureWidth--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">textureHeight</span>:int</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/calculateResolution/textureHeight-->Texture height.<!--translator-end:alternativa.engine3d.core:Object3D/calculateResolution/textureHeight--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:int</code> (default = <code>1</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/calculateResolution/type-->Calculation method: 0 - by first edge, 1 - average value, 2 - max value, 3 - min value.<!--translator-end:alternativa.engine3d.core:Object3D/calculateResolution/type--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">matrix</span>:Matrix3D</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/calculateResolution/matrix-->Transformation matrix.<!--translator-end:alternativa.engine3d.core:Object3D/calculateResolution/matrix--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/calculateResolution-return-->Resolution.  <!--translator-end:alternativa.engine3d.core:Object3D/calculateResolution-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../materials/TextureMaterial.html" target="">alternativa.engine3d.materials.TextureMaterial</a>
+<br>
+<a href="../core/MipMapping.html" target="">alternativa.engine3d.core.MipMapping</a>
+</div>
+</div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clone():<a href="../core/Object3D.html">Object3D</a></code><p><!--translator-start:alternativa.engine3d.core:Object3D/clone-->Returns an object that is an exact copy of the original object.<!--translator-end:alternativa.engine3d.core:Object3D/clone--></p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/Object3D.html">Object3D</a></code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/clone-return-->Original object clone.<!--translator-end:alternativa.engine3d.core:Object3D/clone-return--></td>
+</tr>
+</table>
+</div>
+<a name="clonePropertiesFrom()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clonePropertiesFrom</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function clonePropertiesFrom(source:<a href="Object3D.html">Object3D</a>):void</code><p><!--translator-start:alternativa.engine3d.core:Object3D/protected:clonePropertiesFrom-->Copies the base properties.<!--translator-end:alternativa.engine3d.core:Object3D/protected:clonePropertiesFrom--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">source</span>:<a href="Object3D.html">Object3D</a></code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/protected:clonePropertiesFrom/source-->Source object.<!--translator-end:alternativa.engine3d.core:Object3D/protected:clonePropertiesFrom/source--></td>
+</tr>
+</table>
+</div>
+<a name="dispatchEvent()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispatchEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function dispatchEvent(event:Event):Boolean</code><p><!--translator-start:alternativa.engine3d.core:Object3D/dispatchEvent-->Dispatches an event into the event flow.<!--translator-end:alternativa.engine3d.core:Object3D/dispatchEvent--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">event</span>:Event</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/dispatchEvent/event-->The Event object that is dispatched into the event flow.<!--translator-end:alternativa.engine3d.core:Object3D/dispatchEvent/event--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/dispatchEvent-return-->A value of true if the event was successfully dispatched.<!--translator-end:alternativa.engine3d.core:Object3D/dispatchEvent-return--></td>
+</tr>
+</table>
+</div>
+<a name="globalToLocal()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">globalToLocal</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function globalToLocal(point:Vector3D):Vector3D</code><p><!--translator-start:alternativa.engine3d.core:Object3D/globalToLocal-->Transforms a point from global space to local spce of the object.<!--translator-end:alternativa.engine3d.core:Object3D/globalToLocal--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">point</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/globalToLocal/point-->Point in global space.<!--translator-end:alternativa.engine3d.core:Object3D/globalToLocal/point--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/globalToLocal-return-->Point in localspace of object.<!--translator-end:alternativa.engine3d.core:Object3D/globalToLocal-return--></td>
+</tr>
+</table>
+</div>
+<a name="hasEventListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasEventListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function hasEventListener(type:String):Boolean</code><p><!--translator-start:alternativa.engine3d.core:Object3D/hasEventListener-->Checks whether the EventDispatcher object has any listeners registered for a specific type of event.<!--translator-end:alternativa.engine3d.core:Object3D/hasEventListener--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/hasEventListener/type-->Event type.<!--translator-end:alternativa.engine3d.core:Object3D/hasEventListener/type--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/hasEventListener-return-->A value of true if a listener of the specified type is registered; false otherwise.<!--translator-end:alternativa.engine3d.core:Object3D/hasEventListener-return--></td>
+</tr>
+</table>
+</div>
+<a name="intersectRay()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">intersectRay</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function intersectRay(origin:Vector3D, direction:Vector3D, excludedObjects:Dictionary = null, camera:<a href="Camera3D.html">Camera3D</a> = null):<a href="../core/RayIntersectionData.html">RayIntersectionData</a></code><p><!--translator-start:alternativa.engine3d.core:Object3D/intersectRay-->Searches for the ray intersection.<!--translator-end:alternativa.engine3d.core:Object3D/intersectRay--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">origin</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/intersectRay/origin-->Ray origin.<!--translator-end:alternativa.engine3d.core:Object3D/intersectRay/origin--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">direction</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/intersectRay/direction-->Ray direction.<!--translator-end:alternativa.engine3d.core:Object3D/intersectRay/direction--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">excludedObjects</span>:Dictionary</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/intersectRay/excludedObjects-->The objects that are keys of this dictionary will be excluded from intersection test.<!--translator-end:alternativa.engine3d.core:Object3D/intersectRay/excludedObjects--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">camera</span>:<a href="Camera3D.html">Camera3D</a></code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/intersectRay/camera-->The camera for <code>Sprite3D</code> objects intersection test.<!--translator-end:alternativa.engine3d.core:Object3D/intersectRay/camera--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/RayIntersectionData.html">RayIntersectionData</a></code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/intersectRay-return-->Intersection test result -  <code>RayIntersectionData</code> object. If there is no intersection the value of null will be returned.<!--translator-end:alternativa.engine3d.core:Object3D/intersectRay-return--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="RayIntersectionData.html" target="">RayIntersectionData</a>
+<br>
+<a href="../objects/Sprite3D.html" target="">alternativa.engine3d.objects.Sprite3D</a>
+</div>
+</div>
+<a name="localToGlobal()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">localToGlobal</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function localToGlobal(point:Vector3D):Vector3D</code><p><!--translator-start:alternativa.engine3d.core:Object3D/localToGlobal-->Transforms a point from local space of object to global spce.<!--translator-end:alternativa.engine3d.core:Object3D/localToGlobal--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">point</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/localToGlobal/point-->Point in local space of object.<!--translator-end:alternativa.engine3d.core:Object3D/localToGlobal/point--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/localToGlobal-return-->Point in global space.<!--translator-end:alternativa.engine3d.core:Object3D/localToGlobal-return--></td>
+</tr>
+</table>
+</div>
+<a name="removeEventListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeEventListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeEventListener(type:String, listener:Function, useCapture:Boolean = false):void</code><p><!--translator-start:alternativa.engine3d.core:Object3D/removeEventListener-->Removes a listener from the EventDispatcher object.<!--translator-end:alternativa.engine3d.core:Object3D/removeEventListener--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/removeEventListener/type-->Event type.<!--translator-end:alternativa.engine3d.core:Object3D/removeEventListener/type--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">listener</span>:Function</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/removeEventListener/listener-->The listener object to remove.<!--translator-end:alternativa.engine3d.core:Object3D/removeEventListener/listener--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">useCapture</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/removeEventListener/useCapture-->Specifies whether the listener was registered for the capture phase or the target and bubbling phases.<!--translator-end:alternativa.engine3d.core:Object3D/removeEventListener/useCapture--></td>
+</tr>
+</table>
+</div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toString():String</code><p><!--translator-start:alternativa.engine3d.core:Object3D/toString-->Returns the string presentation of the specified object.<!--translator-end:alternativa.engine3d.core:Object3D/toString--></p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/toString-return-->String presentation.<!--translator-end:alternativa.engine3d.core:Object3D/toString-return--></td>
+</tr>
+</table>
+</div>
+<a name="willTrigger()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">willTrigger</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function willTrigger(type:String):Boolean</code><p><!--translator-start:alternativa.engine3d.core:Object3D/willTrigger-->Checks whether an event listener is registered with this EventDispatcher object or any of its ancestors for the specified event type.<!--translator-end:alternativa.engine3d.core:Object3D/willTrigger--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/willTrigger/type-->Event type.<!--translator-end:alternativa.engine3d.core:Object3D/willTrigger/type--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.core:Object3D/willTrigger-return-->A value of true if a listener of the specified type will be triggered; false otherwise.<!--translator-end:alternativa.engine3d.core:Object3D/willTrigger-return--></td>
+</tr>
+</table>
+</div>
+<div class="detailSectionHeader">Event detail</div>
+<a name="event:click"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">click</td><td class="detailHeaderType">event&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../core/MouseEvent3D.html"><code>alternativa.engine3d.core.MouseEvent3D</code></a>
+<br>
+<p></p><p><!--translator-start:alternativa.engine3d.core:Object3D/click-->Dispatched when a user presses and releases the main button of the user's pointing device over the same object.<!--translator-end:alternativa.engine3d.core:Object3D/click--></p></div>
+<a name="event:doubleClick"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">doubleClick</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../core/MouseEvent3D.html"><code>alternativa.engine3d.core.MouseEvent3D</code></a>
+<br>
+<p></p><p><!--translator-start:alternativa.engine3d.core:Object3D/doubleClick-->Dispatched when a user presses and releases the main button of a pointing device twice in rapid succession over the same object when that object's doubleClickEnabled flag is set to true.<!--translator-end:alternativa.engine3d.core:Object3D/doubleClick--></p></div>
+<a name="event:mouseDown"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mouseDown</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../core/MouseEvent3D.html"><code>alternativa.engine3d.core.MouseEvent3D</code></a>
+<br>
+<p></p><p><!--translator-start:alternativa.engine3d.core:Object3D/mouseDown-->Dispatched when a user presses the pointing device button over an object.<!--translator-end:alternativa.engine3d.core:Object3D/mouseDown--></p></div>
+<a name="event:mouseMove"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mouseMove</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../core/MouseEvent3D.html"><code>alternativa.engine3d.core.MouseEvent3D</code></a>
+<br>
+<p></p><p><!--translator-start:alternativa.engine3d.core:Object3D/mouseMove-->Dispatched when a user moves the pointing device while it is over an object.<!--translator-end:alternativa.engine3d.core:Object3D/mouseMove--></p></div>
+<a name="event:mouseOut"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mouseOut</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../core/MouseEvent3D.html"><code>alternativa.engine3d.core.MouseEvent3D</code></a>
+<br>
+<p></p><p><!--translator-start:alternativa.engine3d.core:Object3D/mouseOut-->Dispatched when the user moves a pointing device away from an object.<!--translator-end:alternativa.engine3d.core:Object3D/mouseOut--></p></div>
+<a name="event:mouseOver"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mouseOver</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../core/MouseEvent3D.html"><code>alternativa.engine3d.core.MouseEvent3D</code></a>
+<br>
+<p></p><p><!--translator-start:alternativa.engine3d.core:Object3D/mouseOver-->Dispatched when the user moves a pointing device over an object.<!--translator-end:alternativa.engine3d.core:Object3D/mouseOver--></p></div>
+<a name="event:mouseUp"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mouseUp</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../core/MouseEvent3D.html"><code>alternativa.engine3d.core.MouseEvent3D</code></a>
+<br>
+<p></p><p><!--translator-start:alternativa.engine3d.core:Object3D/mouseUp-->Dispatched when a user releases the pointing device button over an object.<!--translator-end:alternativa.engine3d.core:Object3D/mouseUp--></p></div>
+<a name="event:mouseWheel"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mouseWheel</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../core/MouseEvent3D.html"><code>alternativa.engine3d.core.MouseEvent3D</code></a>
+<br>
+<p></p><p><!--translator-start:alternativa.engine3d.core:Object3D/mouseWheel-->Dispatched when a mouse wheel is spun over an object.<!--translator-end:alternativa.engine3d.core:Object3D/mouseWheel--></p></div>
+<a name="event:rollOut"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rollOut</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../core/MouseEvent3D.html"><code>alternativa.engine3d.core.MouseEvent3D</code></a>
+<br>
+<p></p><p><!--translator-start:alternativa.engine3d.core:Object3D/rollOut-->Dispatched when the user moves a pointing device away from an object.<!--translator-end:alternativa.engine3d.core:Object3D/rollOut--></p></div>
+<a name="event:rollOver"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rollOver</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../core/MouseEvent3D.html"><code>alternativa.engine3d.core.MouseEvent3D</code></a>
+<br>
+<p></p><p><!--translator-start:alternativa.engine3d.core:Object3D/rollOver-->Dispatched when the user moves a pointing device over an object.<!--translator-end:alternativa.engine3d.core:Object3D/rollOver--></p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

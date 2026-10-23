@@ -1,0 +1,271 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="/favicon.ico" rel="icon">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="EllipsoidCollider,alternativa.engine3d.core.EllipsoidCollider,radiusX,radiusY,radiusZ,threshold,calculateDestination,getCollision" name="keywords">
+<title>alternativa.engine3d.core.EllipsoidCollider</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'EllipsoidCollider - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?alternativa/engine3d/core/EllipsoidCollider.html&amp;alternativa/engine3d/core/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;EllipsoidCollider</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class EllipsoidCollider"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">alternativa.engine3d.core</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class EllipsoidCollider</td>
+</tr>
+</table>
+<p></p><!--translator-start:alternativa.engine3d.core:EllipsoidCollider-->Implements continuous collison detection for ellipsoid and flat convex polygons.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider--><p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#radiusX">radiusX</a> : Number<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:EllipsoidCollider/radiusX-short-->Ellipsoid radius along X axis.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/radiusX-short--></div>
+</td><td class="summaryTableOwnerCol">EllipsoidCollider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#radiusY">radiusY</a> : Number<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:EllipsoidCollider/radiusY-short-->Ellipsoid radius along Y axis.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/radiusY-short--></div>
+</td><td class="summaryTableOwnerCol">EllipsoidCollider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#radiusZ">radiusZ</a> : Number<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:EllipsoidCollider/radiusZ-short-->Ellipsoid radius along Z axis.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/radiusZ-short--></div>
+</td><td class="summaryTableOwnerCol">EllipsoidCollider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#threshold">threshold</a> : Number = 0.001<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:EllipsoidCollider/threshold-short-->Minimum absolute difference between two values when they are considered to be different.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/threshold-short--></div>
+</td><td class="summaryTableOwnerCol">EllipsoidCollider</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#EllipsoidCollider()">EllipsoidCollider</a>(radiusX:Number, radiusY:Number, radiusZ:Number)</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:EllipsoidCollider/EllipsoidCollider-short-->Creates a new instance.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/EllipsoidCollider-short--></div>
+</td><td class="summaryTableOwnerCol">EllipsoidCollider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#calculateDestination()">calculateDestination</a>(source:Vector3D, displacement:Vector3D, object:<a href="Object3D.html">Object3D</a>, excludedObjects:Dictionary = null):Vector3D</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:EllipsoidCollider/calculateDestination-short-->Calculates destination point from given start positon and displacement vector.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/calculateDestination-short--></div>
+</td><td class="summaryTableOwnerCol">EllipsoidCollider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getCollision()">getCollision</a>(source:Vector3D, displacement:Vector3D, resCollisionPoint:Vector3D, resCollisionPlane:Vector3D, object:<a href="Object3D.html">Object3D</a>, excludedObjects:Dictionary = null):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.core:EllipsoidCollider/getCollision-short-->Finds first collision from given starting point and displacement vector.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/getCollision-short--></div>
+</td><td class="summaryTableOwnerCol">EllipsoidCollider</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="radiusX"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">radiusX</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var radiusX:Number</code><p><!--translator-start:alternativa.engine3d.core:EllipsoidCollider/radiusX-->Ellipsoid radius along X axis.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/radiusX--></p></div>
+<a name="radiusY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">radiusY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var radiusY:Number</code><p><!--translator-start:alternativa.engine3d.core:EllipsoidCollider/radiusY-->Ellipsoid radius along Y axis.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/radiusY--></p></div>
+<a name="radiusZ"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">radiusZ</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var radiusZ:Number</code><p><!--translator-start:alternativa.engine3d.core:EllipsoidCollider/radiusZ-->Ellipsoid radius along Z axis.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/radiusZ--></p></div>
+<a name="threshold"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">threshold</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var threshold:Number = 0.001</code><p><!--translator-start:alternativa.engine3d.core:EllipsoidCollider/threshold-->Minimum absolute difference between two values when they are considered to be different. Default value is 0.001.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/threshold--></p></div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="EllipsoidCollider()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">EllipsoidCollider</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function EllipsoidCollider(radiusX:Number, radiusY:Number, radiusZ:Number)</code><p><!--translator-start:alternativa.engine3d.core:EllipsoidCollider/EllipsoidCollider-->Creates a new instance.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/EllipsoidCollider--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">radiusX</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.core:EllipsoidCollider/EllipsoidCollider/radiusX-->Radius along X axis.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/EllipsoidCollider/radiusX--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">radiusY</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.core:EllipsoidCollider/EllipsoidCollider/radiusY-->Radius along Y axis.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/EllipsoidCollider/radiusY--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">radiusZ</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.core:EllipsoidCollider/EllipsoidCollider/radiusZ-->Radius along Z axis.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/EllipsoidCollider/radiusZ--></td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="calculateDestination()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">calculateDestination</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function calculateDestination(source:Vector3D, displacement:Vector3D, object:<a href="Object3D.html">Object3D</a>, excludedObjects:Dictionary = null):Vector3D</code><p><!--translator-start:alternativa.engine3d.core:EllipsoidCollider/calculateDestination-->Calculates destination point from given start positon and displacement vector.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/calculateDestination--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">source</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.core:EllipsoidCollider/calculateDestination/source-->Starting position.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/calculateDestination/source--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">displacement</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.core:EllipsoidCollider/calculateDestination/displacement-->displacement vector<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/calculateDestination/displacement--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">object</span>:<a href="Object3D.html">Object3D</a></code> &mdash; <!--translator-start:alternativa.engine3d.core:EllipsoidCollider/calculateDestination/object-->The object to use in collision detection. If a container is specified, all its children will be tested for collison with ellipsoid.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/calculateDestination/object--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">excludedObjects</span>:Dictionary</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.core:EllipsoidCollider/calculateDestination/excludedObjects-->The objects that are keys of this dictionary will be excluded from intersection test.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/calculateDestination/excludedObjects--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.core:EllipsoidCollider/calculateDestination-return-->destination point<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/calculateDestination-return--></td>
+</tr>
+</table>
+</div>
+<a name="getCollision()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getCollision</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getCollision(source:Vector3D, displacement:Vector3D, resCollisionPoint:Vector3D, resCollisionPlane:Vector3D, object:<a href="Object3D.html">Object3D</a>, excludedObjects:Dictionary = null):Boolean</code><p><!--translator-start:alternativa.engine3d.core:EllipsoidCollider/getCollision-->Finds first collision from given starting point and displacement vector.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/getCollision--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">source</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.core:EllipsoidCollider/getCollision/source-->Starting point.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/getCollision/source--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">displacement</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.core:EllipsoidCollider/getCollision/displacement-->Displacement vector.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/getCollision/displacement--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">resCollisionPoint</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.core:EllipsoidCollider/getCollision/resCollisionPoint-->Collision point will be written into this variable.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/getCollision/resCollisionPoint--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">resCollisionPlane</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.core:EllipsoidCollider/getCollision/resCollisionPlane-->Collision plane parameters will be written into this variable.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/getCollision/resCollisionPlane--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">object</span>:<a href="Object3D.html">Object3D</a></code> &mdash; <!--translator-start:alternativa.engine3d.core:EllipsoidCollider/getCollision/object-->The object to use in collision detection. If a container is specified, all its children will be tested for collison with ellipsoid.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/getCollision/object--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">excludedObjects</span>:Dictionary</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.engine3d.core:EllipsoidCollider/getCollision/excludedObjects-->The objects that are keys of this dictionary will be excluded from collision test.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/getCollision/excludedObjects--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.core:EllipsoidCollider/getCollision-return--><code>True</code> if collision was encountered, <code>false</code> otherwise.<!--translator-end:alternativa.engine3d.core:EllipsoidCollider/getCollision-return--></td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

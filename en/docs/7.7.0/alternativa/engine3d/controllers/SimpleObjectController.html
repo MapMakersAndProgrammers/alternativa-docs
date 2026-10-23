@@ -1,0 +1,868 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="/favicon.ico" rel="icon">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="SimpleObjectController,alternativa.engine3d.controllers.SimpleObjectController,ACTION_ACCELERATE,ACTION_BACK,ACTION_DOWN,ACTION_FORWARD,ACTION_LEFT,ACTION_MOUSE_LOOK,ACTION_PITCH_DOWN,ACTION_PITCH_UP,ACTION_RIGHT,ACTION_UP,ACTION_YAW_LEFT,ACTION_YAW_RIGHT,keyBindings,maxPitch,minPitch,mouseSensitivity,speed,speedMultiplier,object,accelerate,bindKey,bindKeys,disable,enable,lookAt,lookAtXYZ,moveBack,moveDown,moveForward,moveLeft,moveRight,moveUp,setDefaultBindings,setObjectPos,setObjectPosXYZ,startMouseLook,stopMouseLook,unbindAll,unbindKey,update,updateObjectTransform" name="keywords">
+<title>alternativa.engine3d.controllers.SimpleObjectController</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'SimpleObjectController - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?alternativa/engine3d/controllers/SimpleObjectController.html&amp;alternativa/engine3d/controllers/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;SimpleObjectController</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class SimpleObjectController"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">alternativa.engine3d.controllers</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class SimpleObjectController</td>
+</tr>
+</table>
+<p></p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController-->Base controller for <code>Object3D</code>.  Provides object control using keyboard and mouse.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController--><p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">Object3D</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#maxPitch">maxPitch</a> : Number = 1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/maxPitch-short-->Maximal pitch in radians.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/maxPitch-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#minPitch">minPitch</a> : Number = -1e+22<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/minPitch-short-->Minimal pitch in radians.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/minPitch-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#mouseSensitivity">mouseSensitivity</a> : Number<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/mouseSensitivity-short-->Mouse sensitivity.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/mouseSensitivity-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#object">object</a> : <a href="../core/Object3D.html">Object3D</a>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/object/get-short-->Object.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/object/get-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#speed">speed</a> : Number<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/speed-short-->Speed in meters per second.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/speed-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#speedMultiplier">speedMultiplier</a> : Number<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/speedMultiplier-short-->Speed multiplier.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/speedMultiplier-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#keyBindings">keyBindings</a> : Object<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/protected:keyBindings-short-->Associative array connecting codes of keyboard keys with commands.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/protected:keyBindings-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#SimpleObjectController()">SimpleObjectController</a>(eventSource:InteractiveObject, object:<a href="../core/Object3D.html">Object3D</a>, speed:Number, speedMultiplier:Number = 3, mouseSensitivity:Number = 1)</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/SimpleObjectController-short-->Creates a new instance.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/SimpleObjectController-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#accelerate()">accelerate</a>(value:Boolean):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/accelerate-short-->Activation of acceleration mode.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/accelerate-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#bindKey()">bindKey</a>(keyCode:uint, action:String):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/bindKey-short-->Method binds key to action.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/bindKey-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#bindKeys()">bindKeys</a>(bindings:Array):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/bindKeys-short-->Method binds keys to actions.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/bindKeys-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#disable()">disable</a>():void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/disable-short-->Deactivates controller.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/disable-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#enable()">enable</a>():void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/enable-short-->Activates controller.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/enable-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#lookAt()">lookAt</a>(point:Vector3D):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/lookAt-short-->Set direction of camera to the specified point.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/lookAt-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#lookAtXYZ()">lookAtXYZ</a>(x:Number, y:Number, z:Number):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/lookAtXYZ-short-->Set direction of camera to the specified point.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/lookAtXYZ-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveBack()">moveBack</a>(value:Boolean):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveBack-short-->Move back activation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveBack-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveDown()">moveDown</a>(value:Boolean):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveDown-short-->Move down activation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveDown-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveForward()">moveForward</a>(value:Boolean):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveForward-short-->Move forward activation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveForward-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveLeft()">moveLeft</a>(value:Boolean):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveLeft-short-->Move left activation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveLeft-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveRight()">moveRight</a>(value:Boolean):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveRight-short-->Move right activation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveRight-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveUp()">moveUp</a>(value:Boolean):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveUp-short-->Move up activation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveUp-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setDefaultBindings()">setDefaultBindings</a>():void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/setDefaultBindings-short-->Sets key bindings by default.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/setDefaultBindings-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setObjectPos()">setObjectPos</a>(pos:Vector3D):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/setObjectPos-short-->Sets object translation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/setObjectPos-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setObjectPosXYZ()">setObjectPosXYZ</a>(x:Number, y:Number, z:Number):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/setObjectPosXYZ-short-->Sets object translation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/setObjectPosXYZ-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#startMouseLook()">startMouseLook</a>():void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/startMouseLook-short-->Enables mouse look.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/startMouseLook-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#stopMouseLook()">stopMouseLook</a>():void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/stopMouseLook-short-->Disables mouse look.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/stopMouseLook-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#unbindAll()">unbindAll</a>():void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/unbindAll-short-->Unbind all keys.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/unbindAll-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#unbindKey()">unbindKey</a>(keyCode:uint):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/unbindKey-short-->Unbind key.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/unbindKey-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#update()">update</a>():void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/update-short-->Calculates new position of object using inner time counter.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/update-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#updateObjectTransform()">updateObjectTransform</a>():void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/updateObjectTransform-short-->Updates information about object transformation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/updateObjectTransform-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACTION_ACCELERATE">ACTION_ACCELERATE</a> : String = "ACTION_ACCELERATE"<div class="summaryTableDescription">[static] <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_ACCELERATE-short-->Action "accelerate".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_ACCELERATE-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACTION_BACK">ACTION_BACK</a> : String = "ACTION_BACK"<div class="summaryTableDescription">[static] <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_BACK-short-->Action "move back".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_BACK-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACTION_DOWN">ACTION_DOWN</a> : String = "ACTION_DOWN"<div class="summaryTableDescription">[static] <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_DOWN-short-->Action "move down".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_DOWN-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACTION_FORWARD">ACTION_FORWARD</a> : String = "ACTION_FORWARD"<div class="summaryTableDescription">[static] <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_FORWARD-short-->Action "move forward".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_FORWARD-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACTION_LEFT">ACTION_LEFT</a> : String = "ACTION_LEFT"<div class="summaryTableDescription">[static] <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_LEFT-short-->Action "move left".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_LEFT-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACTION_MOUSE_LOOK">ACTION_MOUSE_LOOK</a> : String = "ACTION_MOUSE_LOOK"<div class="summaryTableDescription">[static] <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_MOUSE_LOOK-short-->Action "mouse look".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_MOUSE_LOOK-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACTION_PITCH_DOWN">ACTION_PITCH_DOWN</a> : String = "ACTION_PITCH_DOWN"<div class="summaryTableDescription">[static] <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_PITCH_DOWN-short-->Action "pitch down".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_PITCH_DOWN-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACTION_PITCH_UP">ACTION_PITCH_UP</a> : String = "ACTION_PITCH_UP"<div class="summaryTableDescription">[static] <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_PITCH_UP-short-->Action "pitch up".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_PITCH_UP-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACTION_RIGHT">ACTION_RIGHT</a> : String = "ACTION_RIGHT"<div class="summaryTableDescription">[static] <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_RIGHT-short-->Action "move right".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_RIGHT-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACTION_UP">ACTION_UP</a> : String = "ACTION_UP"<div class="summaryTableDescription">[static] <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_UP-short-->Action "move up".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_UP-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACTION_YAW_LEFT">ACTION_YAW_LEFT</a> : String = "ACTION_YAW_LEFT"<div class="summaryTableDescription">[static] <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_YAW_LEFT-short-->Action "yaw left".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_YAW_LEFT-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACTION_YAW_RIGHT">ACTION_YAW_RIGHT</a> : String = "ACTION_YAW_RIGHT"<div class="summaryTableDescription">[static] <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_YAW_RIGHT-short-->Action "yaw right".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_YAW_RIGHT-short--></div>
+</td><td class="summaryTableOwnerCol">SimpleObjectController</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="keyBindings"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">keyBindings</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var keyBindings:Object</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/protected:keyBindings-->Associative array connecting codes of keyboard keys with commands.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/protected:keyBindings--></p></div>
+<a name="maxPitch"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">maxPitch</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var maxPitch:Number = 1e+22</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/maxPitch-->Maximal pitch in radians.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/maxPitch--></p></div>
+<a name="minPitch"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">minPitch</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var minPitch:Number = -1e+22</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/minPitch-->Minimal pitch in radians.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/minPitch--></p></div>
+<a name="mouseSensitivity"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mouseSensitivity</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var mouseSensitivity:Number</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/mouseSensitivity-->Mouse sensitivity.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/mouseSensitivity--></p></div>
+<a name="object"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">object</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>object:<a href="../core/Object3D.html">Object3D</a></code>&nbsp;&nbsp;[read-write]<p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/object/get-->Object.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/object/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get object():<a href="../core/Object3D.html">Object3D</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set object(value:<a href="../core/Object3D.html">Object3D</a>):void</code>
+<br>
+</div>
+<a name="speed"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">speed</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var speed:Number</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/speed-->Speed in meters per second.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/speed--></p></div>
+<a name="speedMultiplier"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">speedMultiplier</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var speedMultiplier:Number</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/speedMultiplier-->Speed multiplier.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/speedMultiplier--></p></div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="SimpleObjectController()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">SimpleObjectController</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function SimpleObjectController(eventSource:InteractiveObject, object:<a href="../core/Object3D.html">Object3D</a>, speed:Number, speedMultiplier:Number = 3, mouseSensitivity:Number = 1)</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/SimpleObjectController-->Creates a new instance.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/SimpleObjectController--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">eventSource</span>:InteractiveObject</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/SimpleObjectController/eventSource-->Event source for the controller.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/SimpleObjectController/eventSource--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">object</span>:<a href="../core/Object3D.html">Object3D</a></code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/SimpleObjectController/object-->Object.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/SimpleObjectController/object--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">speed</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/SimpleObjectController/speed-->Speed.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/SimpleObjectController/speed--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">speedMultiplier</span>:Number</code> (default = <code>3</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mouseSensitivity</span>:Number</code> (default = <code>1</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="accelerate()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">accelerate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function accelerate(value:Boolean):void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/accelerate-->Activation of acceleration mode.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/accelerate--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/accelerate/value--><code>true</code> to enable acceleration, <code>false</code> to disable acceleration.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/accelerate/value--></td>
+</tr>
+</table>
+</div>
+<a name="bindKey()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">bindKey</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function bindKey(keyCode:uint, action:String):void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/bindKey-->Method binds key to action. There can be only one action for one key.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/bindKey--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">keyCode</span>:uint</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/bindKey/keyCode-->Key code.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/bindKey/keyCode--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">action</span>:String</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/bindKey/action-->Name of action.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/bindKey/action--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../controllers/SimpleObjectController.html#unbindKey()" target="">unbindKey()</a>
+<br>
+<a href="../controllers/SimpleObjectController.html#unbindAll()" target="">unbindAll()</a>
+</div>
+</div>
+<a name="bindKeys()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">bindKeys</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function bindKeys(bindings:Array):void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/bindKeys-->Method binds keys to actions. There can be only one action for one key.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/bindKeys--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">bindings</span>:Array</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/bindKeys/bindings-->Array where key codes and actions are contained. <!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/bindKeys/bindings--></td>
+</tr>
+</table>
+</div>
+<a name="disable()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">disable</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function disable():void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/disable-->Deactivates controller. <!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/disable--></p></div>
+<a name="enable()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enable</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function enable():void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/enable-->Activates controller.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/enable--></p></div>
+<a name="lookAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">lookAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function lookAt(point:Vector3D):void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/lookAt-->Set direction of camera to the specified point.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/lookAt--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">point</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/lookAt/point--><code>Vector3D</code> object.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/lookAt/point--></td>
+</tr>
+</table>
+</div>
+<a name="lookAtXYZ()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">lookAtXYZ</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function lookAtXYZ(x:Number, y:Number, z:Number):void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/lookAtXYZ-->Set direction of camera to the specified point.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/lookAtXYZ--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/lookAtXYZ/x-->X coordinate.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/lookAtXYZ/x--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/lookAtXYZ/y-->Y coordinate.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/lookAtXYZ/y--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">z</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/lookAtXYZ/z-->Z coordinate.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/lookAtXYZ/z--></td>
+</tr>
+</table>
+</div>
+<a name="moveBack()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveBack</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function moveBack(value:Boolean):void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveBack-->Move back activation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveBack--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveBack/value--><code>true</code> to start moveing, <code>false</code> to stop moveing.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveBack/value--></td>
+</tr>
+</table>
+</div>
+<a name="moveDown()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveDown</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function moveDown(value:Boolean):void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveDown-->Move down activation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveDown--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveDown/value--><code>true</code> to start moveing, <code>false</code> to stop moveing.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveDown/value--></td>
+</tr>
+</table>
+</div>
+<a name="moveForward()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveForward</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function moveForward(value:Boolean):void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveForward-->Move forward activation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveForward--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveForward/value--><code>true</code> to start moveing, <code>false</code> to stop moveing.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveForward/value--></td>
+</tr>
+</table>
+</div>
+<a name="moveLeft()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveLeft</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function moveLeft(value:Boolean):void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveLeft-->Move left activation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveLeft--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveLeft/value--><code>true</code> to start moveing, <code>false</code> to stop moveing.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveLeft/value--></td>
+</tr>
+</table>
+</div>
+<a name="moveRight()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveRight</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function moveRight(value:Boolean):void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveRight-->Move right activation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveRight--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveRight/value--><code>true</code> to start moveing, <code>false</code> to stop moveing.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveRight/value--></td>
+</tr>
+</table>
+</div>
+<a name="moveUp()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveUp</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function moveUp(value:Boolean):void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveUp-->Move up activation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveUp--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:Boolean</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/moveUp/value--><code>true</code> to start moveing, <code>false</code> to stop moveing.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/moveUp/value--></td>
+</tr>
+</table>
+</div>
+<a name="setDefaultBindings()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setDefaultBindings</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setDefaultBindings():void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/setDefaultBindings-->Sets key bindings by default. <!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/setDefaultBindings--></p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../controllers/SimpleObjectController.html#bindKey()" target="">bindKey()</a>
+<br>
+<a href="../controllers/SimpleObjectController.html#unbindKey()" target="">unbindKey()</a>
+<br>
+<a href="../controllers/SimpleObjectController.html#unbindAll()" target="">unbindAll()</a>
+</div>
+</div>
+<a name="setObjectPos()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setObjectPos</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setObjectPos(pos:Vector3D):void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/setObjectPos-->Sets object translation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/setObjectPos--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">pos</span>:Vector3D</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/setObjectPos/pos--><code>Vector3D</code> object.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/setObjectPos/pos--></td>
+</tr>
+</table>
+</div>
+<a name="setObjectPosXYZ()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setObjectPosXYZ</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setObjectPosXYZ(x:Number, y:Number, z:Number):void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/setObjectPosXYZ-->Sets object translation.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/setObjectPosXYZ--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/setObjectPosXYZ/x-->X coordinate.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/setObjectPosXYZ/x--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/setObjectPosXYZ/y-->Y coordinate.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/setObjectPosXYZ/y--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">z</span>:Number</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/setObjectPosXYZ/z-->Z coordinate.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/setObjectPosXYZ/z--></td>
+</tr>
+</table>
+</div>
+<a name="startMouseLook()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">startMouseLook</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function startMouseLook():void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/startMouseLook-->Enables mouse look.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/startMouseLook--></p></div>
+<a name="stopMouseLook()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">stopMouseLook</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function stopMouseLook():void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/stopMouseLook-->Disables mouse look.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/stopMouseLook--></p></div>
+<a name="unbindAll()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">unbindAll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function unbindAll():void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/unbindAll-->Unbind all keys.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/unbindAll--></p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../controllers/SimpleObjectController.html#bindKey()" target="">bindKey()</a>
+<br>
+<a href="../controllers/SimpleObjectController.html#unbindKey()" target="">unbindKey()</a>
+</div>
+</div>
+<a name="unbindKey()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">unbindKey</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function unbindKey(keyCode:uint):void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/unbindKey-->Unbind key.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/unbindKey--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">keyCode</span>:uint</code> &mdash; <!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/unbindKey/keyCode-->Key code.<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/unbindKey/keyCode--></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../controllers/SimpleObjectController.html#bindKey()" target="">bindKey()</a>
+<br>
+<a href="../controllers/SimpleObjectController.html#unbindAll()" target="">unbindAll()</a>
+</div>
+</div>
+<a name="update()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">update</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function update():void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/update-->Calculates new position of object using inner time counter. <!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/update--></p></div>
+<a name="updateObjectTransform()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">updateObjectTransform</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function updateObjectTransform():void</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/updateObjectTransform-->Updates information about object transformation. <!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/updateObjectTransform--></p></div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="ACTION_ACCELERATE"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACTION_ACCELERATE</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACTION_ACCELERATE:String = "ACTION_ACCELERATE"</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_ACCELERATE-->Action "accelerate". <!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_ACCELERATE--></p></div>
+<a name="ACTION_BACK"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACTION_BACK</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACTION_BACK:String = "ACTION_BACK"</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_BACK-->Action "move back".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_BACK--></p></div>
+<a name="ACTION_DOWN"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACTION_DOWN</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACTION_DOWN:String = "ACTION_DOWN"</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_DOWN-->Action "move down".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_DOWN--></p></div>
+<a name="ACTION_FORWARD"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACTION_FORWARD</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACTION_FORWARD:String = "ACTION_FORWARD"</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_FORWARD-->Action "move forward".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_FORWARD--></p></div>
+<a name="ACTION_LEFT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACTION_LEFT</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACTION_LEFT:String = "ACTION_LEFT"</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_LEFT-->Action "move left".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_LEFT--></p></div>
+<a name="ACTION_MOUSE_LOOK"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACTION_MOUSE_LOOK</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACTION_MOUSE_LOOK:String = "ACTION_MOUSE_LOOK"</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_MOUSE_LOOK-->Action "mouse look".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_MOUSE_LOOK--></p></div>
+<a name="ACTION_PITCH_DOWN"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACTION_PITCH_DOWN</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACTION_PITCH_DOWN:String = "ACTION_PITCH_DOWN"</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_PITCH_DOWN-->Action "pitch down".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_PITCH_DOWN--></p></div>
+<a name="ACTION_PITCH_UP"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACTION_PITCH_UP</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACTION_PITCH_UP:String = "ACTION_PITCH_UP"</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_PITCH_UP-->Action "pitch up".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_PITCH_UP--></p></div>
+<a name="ACTION_RIGHT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACTION_RIGHT</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACTION_RIGHT:String = "ACTION_RIGHT"</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_RIGHT-->Action "move right".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_RIGHT--></p></div>
+<a name="ACTION_UP"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACTION_UP</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACTION_UP:String = "ACTION_UP"</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_UP-->Action "move up".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_UP--></p></div>
+<a name="ACTION_YAW_LEFT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACTION_YAW_LEFT</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACTION_YAW_LEFT:String = "ACTION_YAW_LEFT"</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_YAW_LEFT-->Action "yaw left".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_YAW_LEFT--></p></div>
+<a name="ACTION_YAW_RIGHT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACTION_YAW_RIGHT</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACTION_YAW_RIGHT:String = "ACTION_YAW_RIGHT"</code><p><!--translator-start:alternativa.engine3d.controllers:SimpleObjectController/ACTION_YAW_RIGHT-->Action "yaw right".<!--translator-end:alternativa.engine3d.controllers:SimpleObjectController/ACTION_YAW_RIGHT--></p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

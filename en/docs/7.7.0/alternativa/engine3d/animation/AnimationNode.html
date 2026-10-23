@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="/favicon.ico" rel="icon">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="AnimationNode,alternativa.engine3d.animation.AnimationNode,speed,isActive,parent" name="keywords">
+<title>alternativa.engine3d.animation.AnimationNode</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'AnimationNode - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?alternativa/engine3d/animation/AnimationNode.html&amp;alternativa/engine3d/animation/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;AnimationNode</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class AnimationNode"); titleBar_setSubNav(false,true,false,false,false,false,false,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">alternativa.engine3d.animation</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class AnimationNode</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Subclasses</td><td><a href="../animation/AnimationClip.html">AnimationClip</a>, <a href="../animation/AnimationCouple.html">AnimationCouple</a>, <a href="../animation/AnimationSwitcher.html">AnimationSwitcher</a></td>
+</tr>
+</table>
+<p></p><!--translator-start:alternativa.engine3d.animation:AnimationNode-->Animation tree node. Animation in alternativaplatform is built over the blend tree. This tree is intended for the combination of a set of animations and unambiguous status of each property being animated in every frame. E.g. there can be independent animations for legs and hands, that will be presented by the nodes of blend tree. With the help of blenders, derived from <code>AnimationNode</code> you can change or blend nodes of blend tree. Every tree animation is controlled by <code>AnimationController</code>. <code>AnimationNode</code> instance have to be a root element of the tree.<!--translator-end:alternativa.engine3d.animation:AnimationNode--><p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#isActive">isActive</a> : Boolean<div class="summaryTableDescription">[read-only] <!--translator-start:alternativa.engine3d.animation:AnimationNode/isActive/get-short-->Determines if the animation is active.<!--translator-end:alternativa.engine3d.animation:AnimationNode/isActive/get-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationNode</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#parent">parent</a> : <a href="../animation/AnimationNode.html">AnimationNode</a>
+<div class="summaryTableDescription">[read-only] <!--translator-start:alternativa.engine3d.animation:AnimationNode/parent/get-short-->Parent animation blender.<!--translator-end:alternativa.engine3d.animation:AnimationNode/parent/get-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationNode</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#speed">speed</a> : Number = 1<div class="summaryTableDescription"><!--translator-start:alternativa.engine3d.animation:AnimationNode/speed-short-->Animation speed.<!--translator-end:alternativa.engine3d.animation:AnimationNode/speed-short--></div>
+</td><td class="summaryTableOwnerCol">AnimationNode</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="isActive"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isActive</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>isActive:Boolean</code>&nbsp;&nbsp;[read-only]<p><!--translator-start:alternativa.engine3d.animation:AnimationNode/isActive/get-->Determines if the animation is active.<!--translator-end:alternativa.engine3d.animation:AnimationNode/isActive/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get isActive():Boolean</code>
+<br>
+</div>
+<a name="parent"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">parent</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>parent:<a href="../animation/AnimationNode.html">AnimationNode</a></code>&nbsp;&nbsp;[read-only]<p><!--translator-start:alternativa.engine3d.animation:AnimationNode/parent/get-->Parent animation blender.<!--translator-end:alternativa.engine3d.animation:AnimationNode/parent/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get parent():<a href="../animation/AnimationNode.html">AnimationNode</a></code>
+<br>
+</div>
+<a name="speed"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">speed</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var speed:Number = 1</code><p><!--translator-start:alternativa.engine3d.animation:AnimationNode/speed-->Animation speed.<!--translator-end:alternativa.engine3d.animation:AnimationNode/speed--></p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
